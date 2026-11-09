@@ -15,25 +15,29 @@ rules with the changes it recorded, which win, compaction or not.
 **Who asks, and who accepts.**
 <!-- adapt: Who may ask for research, and who accepts a report as the answer? -->
 Anyone in the organisation may ask, through their dispatcher or by starting a lead. The
-person who asked accepts the report: it has landed when they accept it as the answer to
-their question. Why: only the one whose decision it serves can say it answers it.
+person who accepts the report is the person who asked: it has landed when they accept it
+as the answer to their question. Wherever a skill says "the person who accepts the report",
+it means the one this rule names. Why: only the one whose decision it serves can say it
+answers it.
 
 **What a report needs before it goes for acceptance.**
-<!-- adapt: What must hold at a report's revision before it goes to the person who asked? -->
-At one revision of the report: the verifier's verdict on each claim the report leans on,
-each claim it found weak or wrong corrected, dropped or shown as weak in the report; and
-the lead's note, `CHECKED at <revision>`. The verifier is a fresh instance briefed to
+<!-- adapt: What must hold at a report's revision before it goes for acceptance? -->
+At one revision of the report: the verifier's verdict on each claim the report leans on;
+each claim it found weak narrowed to its evidence or shown as weak, each one it found wrong
+corrected or dropped (and what rested on it changed with it), and each verdict the lead
+disputes settled by a fresh verifier or shown in the report as disputed; and the lead's
+note, `CHECKED at <revision>`. The verifier is a fresh instance briefed to
 disprove, on a different model from the researchers and the lead wherever the organisation
 has one. A revision that changes a claim the report leans on, or adds one, gets a fresh
 verifier for that claim. Why: agents of one model, briefed by one lead, echo one another,
 and a check briefed to disprove is what breaks the echo.
 
 **A further reader.**
-<!-- adapt: Does any report need a reader beyond the verifier and the person who asked before it lands? -->
+<!-- adapt: Does any report need a reader beyond the verifier and the person who accepts it before it lands? -->
 None. Where the organisation names one (a maintainer for an area, a reviewer for reports
 headed outside the organisation), the lead hands that reader the report at its checked
 revision before it goes for acceptance, and waits for its verdict. Why: a report lands on
-the acceptance of the person who asked; another reader is added only where the
+the acceptance of the person who accepts it; another reader is added only where the
 organisation already requires one.
 
 **Who does the work.** The lead frames the question, plans the angles, writes the report

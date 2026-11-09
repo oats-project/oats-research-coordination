@@ -20,8 +20,8 @@ Researchers are the lead's probes, one angle each, in parallel. A verifier, brie
 disprove, checks the claims the report leans on: it is a role, not an option. Every
 hand-off is a message about a finished artefact at its exact reference. People give
 direction and decisions, as one card with a recommendation, with no deadline and no
-default if they are silent. A report lands when the person who asked accepts it as the
-answer.
+default if they are silent. A report lands when the person who asked (or whoever the landing
+rules name) accepts it as the answer.
 
 It suits organisations whose agents research questions for people who must decide: one
 person or several. The template's roles:

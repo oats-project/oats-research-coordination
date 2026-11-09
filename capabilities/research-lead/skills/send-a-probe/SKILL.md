@@ -27,8 +27,8 @@ Two questions are two probes.
 ## Already known?
 Before you send a probe, and as every probe's first step: does it exist already, in your
 knowledge layer, the organisation's earlier reports, published work or the code? Say where
-you looked. A search that finds nothing is recorded as such, in your instance state or the probe's
-report, so nobody runs it again.
+you looked. A search that finds nothing is recorded as such, in your instance state or the
+probe's report, so nobody runs it again.
 
 ## Competing approaches
 When the plan can go more than one way and the choice matters, don't pick one and probe it:

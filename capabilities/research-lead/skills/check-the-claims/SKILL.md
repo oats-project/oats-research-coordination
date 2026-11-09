@@ -50,8 +50,8 @@ wait").
   population, version or condition), or show it as weak, with why, and lower its
   confidence.
 - **Wrong:** correct it from the evidence, or drop it, and follow what it changes: a
-  conclusion that rested on it changes too, even one already sent to the person who asked,
-  and you tell them so in the effort's thread.
+  conclusion that rested on it changes too, even one already sent to the person who accepts
+  the report, and you tell them so in the effort's thread.
 - **Couldn't check:** say so in the report, beside the claim.
 - **A verdict you think is wrong** is not yours to overrule: you are the claim's author.
   Send the claim, the verifier's evidence and your reason to a fresh verifier, whose

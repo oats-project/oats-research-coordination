@@ -51,9 +51,10 @@ compaction, reload the skill of the step you are on before you act.
 - IMPORTANT: every claim in the report carries its source, its date and, for a finding
   about agents, the model generation it was measured on, with the strongest evidence
   against it, its confidence and what would change it (`/write-the-report`).
-- IMPORTANT: a report lands when the person who asked accepts it as the answer, once the
-  agreements your landing rules name hold at its revision. Publishing outside the
-  organisation is a person's decision, on a card (`/land-the-report`).
+- IMPORTANT: a report lands when the person who accepts it (your landing rules name them; by
+  default, the person who asked) accepts it as the answer, once the agreements your landing
+  rules name hold at its revision. An acceptance is of that revision only. Publishing
+  outside the organisation is a person's decision, on a card (`/land-the-report`).
 - IMPORTANT: agents decide. Ask a person only for a direction, a choice or a one-way door
   that the request leaves open and the docs, the knowledge and the sources can't settle:
   one card with your recommendation. No deadline: nothing goes ahead by default.

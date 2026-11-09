@@ -35,8 +35,9 @@ to start the needed one, with your message as the request it reads by its id (it
 names the role, the area and you); where they have no dispatcher, ask them.
 
 ## Landing
-Each area's landing rules apply: a report lands on the acceptance of the person who asked,
-and a finding for another person's area goes into their knowledge by their area's expert.
+Each area's landing rules apply: a report lands on the acceptance of the person who accepts
+it, and a finding for another person's area goes into their knowledge by their area's
+expert.
 
 ## Disputes
 - **Text** (two efforts revise the same knowledge entry): the first one landed wins, and

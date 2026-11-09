@@ -17,9 +17,9 @@ Only for:
 Never for a plan, an angle or a new revision. Never send an FYI. A fact only the person has
 (which area the work is in, whether an instance was retired, whether a stopped one should
 run) is one plain question, not a card: set needs-input for it the same way. A report goes
-to the person who asked for their acceptance: that is a hand-off of the report at its
-checked revision (`/land-the-report`), not a card. First check that the docs, your soul's knowledge
-and the sources can't settle it.
+to the person who accepts it: that is a hand-off of the report at its checked revision
+(`/land-the-report`), not a card. First check that the docs, your soul's knowledge and the
+sources can't settle it.
 
 ## The card
 One message in the effort's thread with that person, headed

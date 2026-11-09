@@ -30,11 +30,11 @@ before next quarter's plan."
    each briefed with its one angle and none of the lead's expectations, and sets a
    checkpoint on each.
 4. **The researchers report** (`/research-an-angle`, `/report-the-angle`). Each opens
-   primary sources, quotes the figure each finding rests on, dates it, and gives the strongest
-   evidence against it. One notes that its best figure is a vendor's account of its own
-   customers: selection, said in the report. The lead combines them, sends one more
-   researcher a second-round angle carrying one finding and its source to the leading
-   angle, and records every angle, kept or dropped. It retires each researcher once it has
+   primary sources, quotes the figure each finding rests on, dates it, and gives the
+   strongest evidence against it. One notes that its best figure is a vendor's account of
+   its own customers: selection, said in the report. The lead combines them, sends one more
+   researcher a second-round angle carrying one finding and its source to the leading angle,
+   and records every angle, kept or dropped. It retires each researcher once it has
    answered.
 5. **The lead writes the report** (`/write-the-report`): the answer first, then the six
    claims it leans on, each with its source, its date, the evidence against it, its
@@ -133,9 +133,9 @@ briefed by one lead, and reading many of the same few sources. They agreed on ne
 everything. A seventh, briefed to disprove the eight claims the proposal leaned on, opened
 each primary source and found nothing fabricated, but two claims wrong and three weak
 (resting on anecdotes or bundled metrics); the rest held once their dropped qualifiers were
-restored. That reversed two conclusions already sent to the person who asked. The same
-research found that findings about agents move with model generations: a finding measured
-on an older generation was often unconfirmed on current ones.
+restored. That reversed two conclusions already sent to the person who asked. It also
+showed that, for findings about agents, recency is measured in model generations, not
+dates.
 
 What the template takes from it: the verifier as a role, not an option, briefed to
 disprove, on another model; every claim keeps its qualifiers; every finding about agents
@@ -149,15 +149,14 @@ sampled, and the parts checked don't name the model generation of each result.
 
 - **Parallel attempts, then a separate check.** "Our First Proof submissions" (OpenAI, 20
   February 2026; Appendix A of its PDF) describes a pipeline: "Generate a small number of
-  seed ideas"; five approaches "passed along to a team of technical problem solvers who
-  will work on each idea in parallel"; then "Repeat up to 3 times: Verify (i) correctness
-  of the proof and (ii) validity of any cited material and bibliographic references", and
-  for a gap "impossible to fix", "work on a new approach". Against it, from the same text:
-  the pipeline was "tried after the original deadline", the main-body solutions were
+  seed ideas"; five approaches "passed along to a team of technical problem solvers who will
+  work on each idea in parallel"; then "Repeat up to 3 times: Verify (i) correctness of the
+  proof and (ii) validity of any cited material and bibliographic references", and for a gap
+  "impossible to fix", "work on a new approach". Against it, from the same text: the
+  pipeline was "tried after the original deadline", the main-body solutions were
   "orchestrated ... manually", and three of four solutions were "judged (by the same model)
   to be correct": a check on the author's own model, which this design doesn't count as
-  independent.
-  [Post](https://openai.com/index/first-proof-submissions/),
+  independent. [Post](https://openai.com/index/first-proof-submissions/),
   [PDF](https://cdn.openai.com/pdf/26177a73-3b75-4828-8c91-e8f1cf27aaa0/oai_first_proof.pdf).
 - **Groups on competing approaches, and what one round found carried to the next.** OpenAI's
   Navier-Stokes post (8 September 2026), read through search results quoting it and through

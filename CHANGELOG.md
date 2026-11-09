@@ -82,9 +82,11 @@ checkpoint recipe the skills point to moves from `/coordinate-developers` to
   revising one knowledge entry; "developers" become "researchers or verifiers".
 - `/land-on-agreement`: sections 1 to 8 are rewritten for a report, keeping their order
   and voice: checked (the verifier's verdicts and `CHECKED at <revision>`), a further
-  reader where the landing rules name one, to the person who asked, a new revision (a
-  fresh verifier for a changed claim), landed (`ACCEPTED by`), after it lands, and
-  publishing on a person's card in place of a release; the maintainer's read and the
+  reader where the landing rules name one, to the person who accepts it (by default the
+  person who asked), a new revision (a fresh verifier for a changed claim; an acceptance
+  and a yes to publish are of one revision, while direction people gave holds), landed
+  (`ACCEPTED by`), after it lands, and publishing on a person's card in place of a
+  release; the maintainer's read and the
   conflict with the default branch are dropped. "Retire what's finished" is engineering's,
   with a landed report in place of merged PRs and researchers and verifiers retired as
   probes.

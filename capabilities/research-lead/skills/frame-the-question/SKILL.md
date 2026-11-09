@@ -34,7 +34,8 @@ card: the decision and what would change it are facts only they have, and the fr
 theirs to correct. Set needs-input (`oats instance attention --message "<one line>"`) and
 end your turn. Meanwhile run the "already known?" check; plan no angle the answer could
 change. Where the request already states all four lines, record the frame, tell them in
-one line the frame you are working to, and go on.
+one line the frame you are working to, and go on. Where your landing rules name someone
+else to accept the report, agree the frame with them too: they accept against it.
 
 ## 4. Record it
 The frame goes at the top of the effort's record, with their answer (`DECISION by

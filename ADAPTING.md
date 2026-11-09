@@ -75,8 +75,9 @@ These have no adapt markers. A copy that changes one is no longer this way of wo
    its exact reference. The record keeps what happened; it never carries the signal.
 7. **People give direction and decisions,** as one card with a recommendation. No deadline,
    no default if they are silent, no FYI that needs action, no approval restated elsewhere.
-8. **A report lands when the person who asked accepts it** as the answer, once the
-   agreements the landing rules name hold at its revision. Publishing outside the
+8. **A report lands when it is accepted as the answer,** by the person who asked unless
+   the landing rules name another, once the agreements the landing rules name hold at its
+   revision. An acceptance is of that revision only. Publishing outside the
    organisation is a person's decision.
 9. **Every claim carries its evidence:** its source, its date and, for a finding about
    agents, the model generation it was measured on, with the strongest evidence against it,
@@ -103,9 +104,9 @@ marker; then remove the marker. Where the organisation has no answer yet:
 A copy is adapted when no marker is left; until then, the markers left are its open points.
 
 ### `capabilities/landing-rules/injects/landing-rules.md`
-- **Who may ask for research, and who accepts a report as the answer?** Assumes anyone in the organisation may ask, and the person who asked accepts. Where someone else accepts (the owner of the decision the report serves, a committee), name them: the texts send the report to whoever this rule names. Default: the assumption.
-- **What must hold at a report's revision before it goes to the person who asked?** Assumes the verifier's verdict on each claim the report leans on, each weak or wrong one corrected, dropped or shown as weak, and the lead's note `CHECKED at <revision>`. An organisation may add a check (a second verifier for reports headed outside it, say); it never removes the verifier. Default: the assumption.
-- **Does any report need a reader beyond the verifier and the person who asked before it lands?** Assumes none. Where the organisation already requires one (a maintainer of an area, a reviewer for reports headed outside it), name it and when it reads; the lead hands it the checked revision before acceptance. This is where a copy adds a maintainer. Default: none.
+- **Who may ask for research, and who accepts a report as the answer?** Assumes anyone in the organisation may ask, and the person who asked accepts. Where someone else accepts (the owner of the decision the report serves, a committee), name them: the texts frame the question with them too, and send the report to whoever this rule names. Default: the assumption.
+- **What must hold at a report's revision before it goes for acceptance?** Assumes the verifier's verdict on each claim the report leans on, each weak one narrowed or shown as weak, each wrong one corrected or dropped, each disputed verdict settled by a fresh verifier or shown as disputed, and the lead's note `CHECKED at <revision>`. An organisation may add a check (a second verifier for reports headed outside it, say); it never removes the verifier. Default: the assumption.
+- **Does any report need a reader beyond the verifier and the person who accepts it before it lands?** Assumes none. Where the organisation already requires one (a maintainer of an area, a reviewer for reports headed outside it), name it and when it reads; the lead hands it the checked revision before acceptance. This is where a copy adds a maintainer. Default: none.
 - **Which sources may researchers and the verifier use?** Assumes public, freely available sources and the organisation's own records the lead's brief names, with no paywalled source and no contact outside the organisation. Name what applies: paywalled or licensed sources it holds (and whose sign-in, never in a brief), internal sources and their limits, or none outside the organisation. Default: the assumption.
 - **Which acts must a person approve, beyond publishing a report?** Assumes spending money, contacting anyone outside the organisation and deleting what someone else uses. Default: those, and only the doors the organisation keeps today.
 - **Who decides to publish a report outside the organisation, and what must a published report carry?** Assumes the person who asked, on a card from the lead, with the owner of any other person's area it touches; only an accepted revision, with its sources, dates and verdicts. Name any review the organisation requires first (legal, communications) and where reports are published. Default: the assumption.

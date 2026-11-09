@@ -1,18 +1,19 @@
 ---
 name: land-the-report
-description: Land a checked report - hand it to the person who asked at its checked revision, as the answer to their framed question; it lands when they accept it as the answer. Then write the findings worth keeping into the knowledge layer, dated and attributable, and publish outside the organisation only on a person's own yes, on a card. Use when a report's agreements hold at one revision, when the person answers, and whenever anyone asks to publish a report.
+description: Land a checked report - hand it at its checked revision to the person who accepts it (your landing rules name them, by default the person who asked), as the answer to the framed question; it lands when they accept it as the answer, and an acceptance is of that revision only. Then write the findings worth keeping into the knowledge layer, dated and attributable, and publish outside the organisation only on a person's own yes, on a card. Use when a report's agreements hold at one revision, when the person answers, and whenever anyone asks to publish a report.
 ---
 
 IMPORTANT: after a compaction, reload this skill before you continue the step.
 
 # Land the report
 
-A report has landed when the person who asked accepts it as the answer to their question.
-Nobody else accepts it for them, and no agent publishes it on its own word.
+A report has landed when it is accepted as the answer to the framed question, by the person
+your landing rules name: by default, the person who asked. Nobody
+else accepts it for them, and no agent publishes it on its own word.
 
 ## 1. Hand it over
 Once the agreements your landing rules name hold at one revision (`/land-on-agreement`),
-send one message in the effort's thread with the person who asked (`/hand-off`):
+send one message in the effort's thread with the person who accepts it (`/hand-off`):
 - first line: "The answer to <the framed question>, for your acceptance";
 - the report's link at its checked revision;
 - the answer in three lines, and how sure;
