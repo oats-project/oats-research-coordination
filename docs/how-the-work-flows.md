@@ -135,13 +135,12 @@ briefed by one lead, and reading many of the same few sources. They agreed on ne
 everything. A seventh, briefed to disprove the eight claims the proposal leaned on, opened
 each primary source and found nothing fabricated, but two claims wrong and three weak
 (resting on anecdotes or bundled metrics); the rest held once their dropped qualifiers were
-restored. That reversed two conclusions already sent to the person who asked. It also
-showed that, for findings about agents, recency is measured in model generations, not
-dates.
+restored. That reversed two conclusions already sent to the person who asked.
 
 What the template takes from it: the verifier as a role, not an option, briefed to
-disprove, on another model; every claim keeps its qualifiers; every finding about agents
-names the model generation it was measured on.
+disprove, on another model; every claim keeps its qualifiers. That every finding about
+agents names the model generation it was measured on is the design's own precaution, not
+something this case showed.
 
 ### Public mathematics work with AI models (2026)
 
