@@ -14,9 +14,8 @@ decision in it, stays yours.
 ## One question each
 - **Test an approach:** does this design work? The smallest spike or run that answers it.
 - **Test a use case:** does the plan hold for this user, input or flow?
-- **An adversarial review of a plan or a design:** what breaks in it? Never of code under
-  review: its developer iterates with its own fresh reviewers, and you verify the converged
-  branch once (`/verify-developer-work`).
+- **An adversarial review of a plan or a design:** what breaks in it? The claims a report
+  leans on go to the verifier instead (`/check-the-claims`).
 - **Investigate an alternative:** what would the other way cost, and what would it give?
 - **Test a theory:** does a claim the plan rests on hold (a cause, how a library or a
   service behaves, that a limit holds, that a fix removes the failure)? It tries the claim
@@ -26,9 +25,9 @@ decision in it, stays yours.
 Two questions are two probes.
 
 ## Already known?
-Before you send a build or a probe, and as every probe's first step: does it exist already,
-in the code, your knowledge layer, a library or the forge's history? Say where you looked. A
-search that finds nothing is recorded as such, in your instance state or the probe's
+Before you send a probe, and as every probe's first step: does it exist already, in your
+knowledge layer, the organisation's earlier reports, published work or the code? Say where
+you looked. A search that finds nothing is recorded as such, in your instance state or the probe's
 report, so nobody runs it again.
 
 ## Competing approaches
@@ -64,18 +63,22 @@ first.
 A probe is proper work (a test of an approach or a use case the plan rests on, an
 adversarial review, an investigation), and so is anything that needs a soul's knowledge, an
 environment or a testing capability:
-- an expert soul, for an area's knowledge, or a fresh read;
-- a developer soul, for an environment (a browser, a local service stack, warehouse access);
-- the code reviewer (`code-reviewer`), for an adversarial read of a plan or a design.
+- a researcher (`researcher`), for one angle of the question: a fresh read of the sources
+  (`/plan-the-angles`);
+- the verifier (`verifier`), to disprove the claims a report leans on (`/check-the-claims`);
+- an expert soul, for an area's knowledge, or a fresh read, or an adversarial read of a
+  plan or a design;
+- a soul whose environment the question needs (a browser, warehouse access), where the
+  organisation has one.
 
 An OATS child is visible to your person (its status, the Desktop), has its own messaging and
-knowledge, and is retired on record; a native subagent of your harness (Claude Code's, pi's
-or Codex's) is invisible to everyone but you.
+knowledge, and is retired on record; a native subagent of your
+harness is invisible to everyone but you.
 
 **Not a probe:** a small investigation or task that directly helps you and needs no soul's
 knowledge and no testing capability (where something is defined, what a file says) may go
 to a native subagent. So may any child your person asks to be one, and the agents of your
-harness's multi-agent workflow mode (Claude Code's ultracode, say) when it is in use.
+harness's multi-agent workflow mode when it is in use.
 
 **On a different model from the author's,** where the organisation has one: every kind of
 probe checks work or validates an idea, and agents of one model share blind spots, so their
@@ -99,8 +102,7 @@ Spawn it as your child, the brief as its task, with a name no instance has had:
 ```bash
 oats spawn <soul> --parent "$OATS_INSTANCE" --same-work --purpose <probe-slug> --task-file <probe.md>
 ```
-A developer-soul probe that needs a repository's code also gets
-`--repo <clone> --base <branch>`, as in `/coordinate-developers`.
+A probe that needs a repository's contents also gets `--repo <clone> --base <branch>`.
 
 ## The brief
 - the one question, and in one line why the plan needs it;
@@ -120,5 +122,8 @@ for a fact.
 - A native subagent ends with its report. An instance sends its done line after its
   report, and you retire it (`/land-on-agreement`, "Retire what's finished"). You retire any
   probe that hasn't retired on answer.
-- Waiting on an instance, set its checkpoint first (`/coordinate-developers`, "Set a
-  checkpoint before you wait").
+- Waiting on an instance, set its checkpoint first (`/plan-the-angles`, "Set a checkpoint
+  before you wait").
+
+Taken from the engineering template's engineering-expert, template-v2.1.0; changed where it
+named a developer, the code reviewer, the code or a harness.

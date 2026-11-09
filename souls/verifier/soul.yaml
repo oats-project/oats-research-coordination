@@ -1,0 +1,10 @@
+schemaVersion: 2
+name: verifier
+description: The verifier, briefed to disprove. A fresh instance takes the claims a report leans on, reads their sources independently, and gives a verdict per claim (holds, weak or wrong) with its evidence, once, to the lead that started it.
+# Its scratch directory only: it reads sources and changes nothing else.
+work: directory
+# Stateless across checks, and independent of what the organisation already believes: no knowledge slot.
+knowledge: none
+# Only the verifier's role and method; never the lead's or a researcher's.
+capabilities:
+  oats.verifier: { from: here }

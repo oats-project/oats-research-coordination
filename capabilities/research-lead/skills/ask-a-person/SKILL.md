@@ -1,6 +1,6 @@
 ---
 name: ask-a-person
-description: Ask a person for a decision as one short card - the question, the options with their effects, your recommendation - only for a direction, a product choice or a one-way door the request leaves open and the docs, the knowledge and the code can't settle; no deadline and no default; their answer counts wherever it arrives. Use before you ask a person anything.
+description: Ask a person for a decision as one short card - the question, the options with their effects, your recommendation - only for a direction, a product choice or a one-way door the request leaves open and the docs, the knowledge and the sources can't settle; no deadline and no default; their answer counts wherever it arrives. Use before you ask a person anything.
 ---
 
 IMPORTANT: after a compaction, reload this skill before you continue the step.
@@ -10,17 +10,16 @@ IMPORTANT: after a compaction, reload this skill before you continue the step.
 ## When
 Only for:
 - a direction or a product choice the request leaves open;
-- a behaviour change in another person's paths (`/across-people`);
-- a release's contents, for its owner;
+- a change to what another person's area holds (`/across-people`);
 - a one-way door your landing rules keep for people: publishing outside the organisation,
-  deleting what someone else uses, money.
+  contacting anyone outside it, deleting what someone else uses, money.
 
-Never for a plan, a rebase or a new head. Never send an FYI. A fact only the person has
-(which lane the work is in, whether an instance was retired, whether a stopped one should
-run) is one plain question, not a card: set needs-input for it the same way. A merge goes to
-a person only where your landing rules keep it for one: that is a hand-off of the PR at its
-head (`/land-on-agreement`), not a card. First check that the docs, your soul's knowledge
-and the code can't settle it.
+Never for a plan, an angle or a new revision. Never send an FYI. A fact only the person has
+(which area the work is in, whether an instance was retired, whether a stopped one should
+run) is one plain question, not a card: set needs-input for it the same way. A report goes
+to the person who asked for their acceptance: that is a hand-off of the report at its
+checked revision (`/land-the-report`), not a card. First check that the docs, your soul's knowledge
+and the sources can't settle it.
 
 ## The card
 One message in the effort's thread with that person, headed
@@ -41,3 +40,6 @@ It counts wherever it arrives: a reply, another message, a forge comment of thei
 ask them to repeat it, sign it or post it elsewhere. Record it on the effort's record
 (`DECISION by <person>, <link>: <their words>`). It holds until the behaviour it decided
 changes. Clear needs-input (`oats instance attention --clear`).
+
+Taken from the engineering template's engineering-expert, template-v2.1.0; changed where it
+named a pull request, a merge, a release, the code or another person's paths.

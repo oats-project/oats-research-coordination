@@ -1,89 +1,85 @@
-## Landing rules: how work lands here
+## Landing rules: how a report lands here
 
 These are this organisation's landing rules and its ownership record, in one place. Every
-coordinating role reads them here: the dispatcher, the experts, the developers and the
-maintainers. Where a skill says "your landing rules", it means this section. They change
-only on the yes of the person who owns the lane, each rule with its reason (where the
-workspace has oats.framework's `oats.coordination-setup`, its set-landing-rules skill
-writes them); a lane opened on the lane map for its
-owner's own work runs on the defaults below until then. No rule sets a deadline or a default
-if someone is silent: a request waits for its answer. These rules are copied into each
-instance at spawn: after a change, whoever wrote it tells each standing instance (the
-dispatchers, the maintainers) and the lead of each open effort (the effort records name
-them) by message, with the change at its commit; each lead tells its developers. Each
-recipient records the change, at its commit, in its state file (a lead on its effort's
-record too), and from then on reads these rules with the changes it recorded, which win,
-compaction or not.
+coordinating role reads them here: the dispatcher and the research leads. Where a skill
+says "your landing rules", it means this section. They change only on the yes of the person
+who owns the area, each rule with its reason (where the workspace has oats.framework's
+`oats.coordination-setup`, its set-landing-rules skill writes them). No rule sets a
+deadline or a default if someone is silent: a request waits for its answer. These rules are
+copied into each instance at spawn: after a change, whoever wrote it tells each standing
+instance (the dispatchers) and the lead of each open effort (the effort records name them)
+by message, with the change at its commit. Each recipient records the change, at its
+commit, in its state file (a lead on its effort's record too), and from then on reads these
+rules with the changes it recorded, which win, compaction or not.
 
-**Lanes and their owners.**
-<!-- adapt: Which lanes does the organisation have, what does each cover, and which person owns each? -->
-- `main`: everything in this workspace's repositories, owned by the person who runs the
-  workspace. It is also the release lane.
+**Who asks, and who accepts.**
+<!-- adapt: Who may ask for research, and who accepts a report as the answer? -->
+Anyone in the organisation may ask, through their dispatcher or by starting a lead. The
+person who asked accepts the report: it has landed when they accept it as the answer to
+their question. Why: only the one whose decision it serves can say it answers it.
 
-**CI green,** wherever these rules or a skill say it, means every check the forge requires
-at a head has succeeded there: none failing, none pending.
+**What a report needs before it goes for acceptance.**
+<!-- adapt: What must hold at a report's revision before it goes to the person who asked? -->
+At one revision of the report: the verifier's verdict on each claim the report leans on,
+each claim it found weak or wrong corrected, dropped or shown as weak in the report; and
+the lead's note, `CHECKED at <revision>`. The verifier is a fresh instance briefed to
+disprove, on a different model from the researchers and the lead wherever the organisation
+has one. A revision that changes a claim the report leans on, or adds one, gets a fresh
+verifier for that claim. Why: agents of one model, briefed by one lead, echo one another,
+and a check briefed to disprove is what breaks the echo.
 
-**What merges a change, and who merges it.**
-<!-- adapt: Per lane, which agreements must hold at a PR's head before it merges, and who merges it? -->
-In every lane, at one head: CI green; a review; and the lead's verification note,
-`VERIFIED at <head>`. The review is the forge's review bot's at that head where one runs,
-each of its findings fixed or answered (a decline with a concrete reason is answered);
-otherwise a round of the developer's review loop that found nothing to fix, with a fresh
-reviewer at that head. Either carries to a new head only through a rebase whose range-diff
-shows every commit unchanged, or an update from the default branch that leaves the PR's own
-diff unchanged; any other new head gets a fresh round, or a new review the
-developer asks the bot for at that head where it doesn't review each push by itself. The
-lead merges. Why: three independent checks at the same head, and the one who owns the whole
-effort lands it.
+**A further reader.**
+<!-- adapt: Does any report need a reader beyond the verifier and the person who asked before it lands? -->
+None. Where the organisation names one (a maintainer for an area, a reviewer for reports
+headed outside the organisation), the lead hands that reader the report at its checked
+revision before it goes for acceptance, and waits for its verdict. Why: a report lands on
+the acceptance of the person who asked; another reader is added only where the
+organisation already requires one.
 
-**The green light to open a PR.**
-<!-- adapt: Who gives the green light to open a PR at the verified head? -->
-The lead's verification note. The developer then opens the PR at that head and works its
-reviews. Why: the lead holds the design, and nothing else needs to happen before review.
+**Who does the work.** The lead frames the question, plans the angles, writes the report
+and lands it. Researchers read the sources, one angle each; the verifier checks the claims.
+Both are the lead's probes: each reports once and retires. The lead never checks its own
+claims, and no researcher checks its own. Why: one agent holds the whole question, and a
+claim is checked by someone other than its author.
 
-**Who builds a change.** A developer builds every change, with a spec and pinned
-acceptance tests, and iterates with a fresh reviewer each round until a round finds nothing
-to fix; the lead verifies the converged branch once, and never runs review rounds or spawns
-reviewers.
-<!-- adapt: May a lead make a one-line docs fix itself, with no review loop? -->
-A lead may make a one-line docs fix itself (a typo, a broken link), with no review loop. It
-is no exception to who iterates with reviewers: nothing in it needs a review round. It
-merges on CI green, the review bot's review where one runs, and the lead's note. If the bot
-finds anything to fix, it is no longer a one-line fix: it goes to a developer. Why: the one
-who built a change holds the context to answer its reviews, and a one-line fix isn't worth
-a developer.
-
-**A maintainer's read, and releases.**
-<!-- adapt: Where does the organisation require a maintainer's read, keep the merge for a maintainer or a person, and who releases? -->
-No lane needs a maintainer's read. A release's contents are approved by the owners whose
-lanes have changes in it; the release lane's maintainer plans, tags and publishes it,
-started when first needed. Why: a maintainer holds what a lead wouldn't, and is called only
-for it.
-
-**A PR with no lead here:** an outside contributor's, a person's own, or a maintainer's
-release prep (the version bump and the assembled notes, nothing more). The lane owner's
-maintainer merges it at its head once CI is green and the review bot's review holds where
-one runs; it reads any but its own release prep first, and approves at that head. Release
-prep needs no review round, like a lead's one-line docs fix, and is no exception to who
-iterates with reviewers: nothing in it needs one. Any fix goes to a lead and its developer.
-A running maintainer finds such a PR in its intake; until one runs, the person brings it to
-their dispatcher, which starts it. Why: someone here has to own the merge, and the lane's
-maintainer holds it.
+**Sources.**
+<!-- adapt: Which sources may researchers and the verifier use? -->
+Public, freely available sources, and the organisation's own records that the lead's brief
+names. No paywalled source, and no contact with anyone outside the organisation (a one-way
+door, below). The lead writes this into every researcher's and verifier's brief. Why: what
+an agent may read, and whom it may ask, is the organisation's to say.
 
 **One-way doors kept for people.**
-<!-- adapt: Which acts must a person approve, beyond a release's contents? -->
-A release's contents, publishing outside the organisation, spending money, and deleting
+<!-- adapt: Which acts must a person approve, beyond publishing a report? -->
+Publishing outside the organisation (below), spending money (a paid source, a paid study),
+contacting anyone outside the organisation (an interview, a survey, a vendor), and deleting
 what someone else uses. Nothing else goes to a person by rule.
 
-**The ownership record.** With one person, they own every path and lane.
-<!-- adapt: With more than one person, who owns which paths and lanes? -->
-- (one line per area: its paths, and the person who owns them)
+**Publishing.**
+<!-- adapt: Who decides to publish a report outside the organisation, and what must a published report carry? -->
+The person who asked decides, for each report, on a card from its lead; where the report
+touches another person's area, that person decides it with them. Only an accepted revision
+is published, with its sources, its dates and the verifier's verdicts as they stand in that
+revision. Why: publishing can't be undone.
+
+**Findings worth keeping.**
+<!-- adapt: Which knowledge layer keeps the findings worth keeping, and who approves what goes in? -->
+Once a report has landed, its lead writes each finding worth keeping into the knowledge
+layer the workspace selects, the way that layer says: dated, with its source, attributed
+to the effort and the accepted revision, and with the model generation it was measured on
+for a finding about agents. A finding for another person's area goes to that area's lead.
+With no knowledge layer, the effort's record keeps the accepted report, and that is the
+record. Why: a finding without its date and source can't be weighed later.
+
+**The ownership record.** With one person, they own every area.
+<!-- adapt: With more than one person, who owns which areas? -->
+- (one line per area: the subjects and records it holds, and the person who owns it)
 
 **Where things are kept.** These rules are copied into each instance at spawn, so what
 changes while work runs is kept where everyone reads and updates it live.
-<!-- adapt: Where are the effort records, the lane map and holds kept? -->
+<!-- adapt: Where are the effort records and the reports kept? -->
 - the effort records: one item per effort in your tasks layer, its status at the top;
-- the lane map, with one entry per maintainer: one record in your tasks layer, created
-  empty when these rules are adapted, at: (its link). A maintainer adds its own entry;
-- a hold: marked on the PR it holds, or, for the default branch, one open record next to
-  the lane map, each with its reason, its scope and who lifts it.
+- the reports: in the effort's record, each revision with its link, and the verifier's
+  verdicts beside the revision they checked;
+- no lane map and no holds: a report merges into nothing others build on. Where the
+  organisation keeps a lane map for another way of working, it is at: (its link).

@@ -1,0 +1,8 @@
+schemaVersion: 2
+name: researcher
+description: One angle of one research question. A fresh instance, the lead's probe, opens primary sources, quotes the figure each finding rests on, dates it, names the model generation of a finding about agents, gives the strongest counter-evidence, reports once with citations and limits, and retires.
+# Its scratch directory only: it reads sources and changes nothing else.
+work: directory
+# Only the researcher's role; it lands nothing, so no landing rules.
+capabilities:
+  oats.researcher: { from: here }
