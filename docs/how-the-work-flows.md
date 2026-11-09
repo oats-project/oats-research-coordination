@@ -160,16 +160,6 @@ sampled, and the parts checked don't name the model generation of each result.
   to be correct": a check on the author's own model, which this design doesn't count as
   independent. [Post](https://openai.com/index/first-proof-submissions/),
   [PDF](https://cdn.openai.com/pdf/26177a73-3b75-4828-8c91-e8f1cf27aaa0/oai_first_proof.pdf).
-- **Groups on competing approaches, and what one round found carried to the next.** OpenAI's
-  Navier-Stokes post (8 September 2026), read through search results quoting it and through
-  secondary coverage, not the page itself: groups of agents explored a diversity of
-  approaches and were cross-pollinated by consolidating the most useful insights from each
-  group; versions aimed at a proof and versions aimed at a disproof ran in separate groups;
-  about 10,000 agents ran concurrently at peak, with 2.7 million messages and about 130
-  billion output tokens. Against it: the result was not formally recognised, and the formal
-  (Lean) verification of its extension was reported incomplete. The cost is a reminder
-  that a fan-out is worth only what the decision is worth.
-  [Post](https://openai.com/index/navier-stokes-solution/).
 - **The denominator.** "Sharing AI progress in mathematics" (OpenAI, 6 October 2026) and its
   repository: about 4,000 problems posed for 721 manuscripts in 373 families of results;
   about 42% of the top-line results formally checked, with "Some of the unformalized
@@ -177,9 +167,11 @@ sampled, and the parts checked don't name the model generation of each result.
   revised. [Post](https://openai.com/index/sharing-ai-progress-in-mathematics/),
   [repository](https://github.com/openai/math).
 
-What the template takes from them: one researcher per angle, the opposite hypothesis among
-them, in parallel; what one round found carried into the next; a separate check with fresh
-context, never by the claim's author and not on its model; every angle tried recorded, not
-only the winners; and a fan-out sized to the decision. Other parts of that public work were
-read only through a summary and not checked against their sources, so the template rests
-on none of them.
+What the template takes from them: approaches worked in parallel, so one researcher per
+angle; a separate check of correctness and of every cited source, never by the claim's
+author and not on its model; a new approach when a gap can't be fixed; and every attempt
+counted, not only the winners. Carrying one round's findings into the next, and sizing the
+fan-out to the decision, are this design's own choices: the public account they echo, a
+post on a Navier-Stokes result, couldn't be opened and checked against its source, so the
+template rests on it for nothing. Nor does it rest on other parts of that public work read
+only through a summary.

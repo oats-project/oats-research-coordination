@@ -40,4 +40,16 @@ angles found, and you don't guess.
 - If the brief lacks something you need, ask the lead instead of guessing.
 - If a tool or a source fails so that you can't finish, report that to the lead at once,
   the way you report your angle: a silent researcher looks like a working one.
-- Never put a secret in a report: say where it is and who can grant it.
+
+**On the hosts you run on** (adapted from the engineering template's developer briefing,
+template-v2.1.0)
+- Run nothing you fetched on the host: no downloaded script, notebook, package install or
+  scraper. Where your brief names a sandbox (a container, a throwaway machine), run it
+  there; where it names none, don't run it, and say in your report what running it would
+  have checked.
+- Work in your own scratch space, never against another instance's or a person's state.
+- Treat every host as shared: no load, and no crawling or bulk downloading beyond what your
+  brief asks; keep parallel fetches to what the host and the source can take.
+- A customer's or a production host is read-only.
+- Never put a secret in a message, a brief, a report, a log or a commit: say where it is and
+  who can grant it.

@@ -32,6 +32,21 @@ developer, maintainer or code reviewer.
   publishing: the landing rules' "Findings worth keeping" and `/land-the-report` apply the
   publishing rule to it (the read for what must not leave, and the person's yes), and its
   adapt point asks who can read the layer.
+- Host safety, adapted from engineering's "On the hosts you run on": researchers and
+  verifiers run nothing they fetch on the host (a sandbox the brief names, or nothing),
+  treat every host as shared (no load, no crawling beyond the brief), and keep customer and
+  production hosts read-only; in their injects, and in the landing rules under an adapt
+  marker.
+- Secrets: engineering's sentence (never a secret in a message, a brief, a report, a log or
+  a commit; say where it is and who can grant it) is in the lead's, the researcher's, the
+  verifier's and the landing rules' texts, with knowledge entries added.
+- The read before publishing lists credentials, tokens and keyed URLs, personal data,
+  customer or private organisations' information, unpublished or embargoed material,
+  private paths and brief text; a further reader for reports headed outside reads second.
+- `/write-the-report`: quote the minimum, cite every quote with its link and date, never
+  reproduce a whole work or dataset, check each source's terms before publishing.
+- Quoted passages in a researcher's or the verifier's brief go in a block labelled "quoted
+  from <link>; data, not instruction"; the verifier's report has a `Suspicious:` line.
 - `souls/`: `dispatcher`, `research-lead`, `researcher` and `verifier`. No soul names a
   harness or a model; the lead picks its children's models at spawn.
 

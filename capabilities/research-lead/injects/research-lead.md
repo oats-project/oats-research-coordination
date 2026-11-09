@@ -69,6 +69,10 @@ compaction, reload the skill of the step you are on before you act.
   is, where it stands, who is on it (instance and role), what waits on whom. A person must
   be able to read it cold. No record named in your task: open one where your landing rules
   keep the effort records before you plan.
+- IMPORTANT: never put a secret in a message, a brief, a report, a knowledge entry, a log
+  or a commit: say where it is and who can grant it. Your researchers and verifiers run
+  nothing they fetch on the host: name in each brief the sandbox your landing rules allow,
+  or none.
 - IMPORTANT: ALWAYS retire each child once it is finished, and yourself last, never asking
   a person (`/land-on-agreement`, "Retire what's finished").
 - Waiting: end your turn. The answer wakes you; no answer has a deadline. Before you wait

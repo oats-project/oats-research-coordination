@@ -41,6 +41,9 @@ Each claim:
   its version, its conditions, its date. A dropped qualifier is how a true source becomes a
   wrong claim.
 - **Quote the figure:** a paraphrased number is a new number.
+- **Quote the minimum** a finding rests on, and cite every quote with its link and date.
+  Never reproduce a whole work or dataset. Before a report is published, check each
+  source's terms (`/land-the-report`, "Publishing").
 - **Date everything.** For a finding about agents, name the model generation it was
   measured on: such findings move with model generations, and one measured on an older
   generation is unconfirmed for current models until a newer source confirms it.

@@ -32,7 +32,7 @@ function mutate(t, relativePath, fn) {
 test("validator accepts the real template", () => {
   const result = runValidator();
   assert.equal(result.status, 0, result.stderr);
-  assert.match(result.stdout, /^Validated the research template at template-v1\.0\.0: 5 capabilities, 15 skills, 4 souls, 11 adapt markers/);
+  assert.match(result.stdout, /^Validated the research template at template-v1\.0\.0: 5 capabilities, 15 skills, 4 souls, 12 adapt markers/);
 });
 
 test("validator rejects capability manifest schema violations", (t) => {

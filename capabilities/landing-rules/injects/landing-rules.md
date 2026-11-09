@@ -55,6 +55,17 @@ names. No paywalled source, and no contact with anyone outside the organisation 
 door, below). The lead writes this into every researcher's and verifier's brief. Why: what
 an agent may read, and whom it may ask, is the organisation's to say.
 
+**On the hosts agents run on.**
+<!-- adapt: Where may agents run what they fetch, which hosts are shared, and which are read-only? -->
+Researchers and verifiers run nothing they fetch on the host they run on: a downloaded
+script, notebook, package or scraper runs only in a sandbox the lead's brief names, and no
+sandbox is named by default, so none runs. Every host is treated as shared: no load, and no
+crawling or bulk downloading beyond the brief. A customer's or a production host is
+read-only. Never put a secret in a message, a brief, a report, a knowledge entry, a log or a
+commit: say where it is and who can grant it. Adapted from the engineering template's "On
+the hosts you run on", template-v2.1.0. Why: what a source hands an agent is untrusted, and
+running it on a shared host puts other people's work at risk.
+
 **One-way doors kept for people.**
 <!-- adapt: Which acts must a person approve, beyond publishing a report? -->
 Publishing outside the organisation (below), spending money (a paid source, a paid study),
@@ -66,9 +77,13 @@ what someone else uses. Nothing else goes to a person by rule.
 The person who asked decides, for each report, on a card from its lead; where the report
 touches another person's area, that person decides it with them. Before the card, the lead
 reads it for what must not leave the organisation: people named who haven't agreed to be,
-internal figures, sources whose terms forbid it, anything a source asked to be kept
-private. Only an accepted revision is published, with its sources, its dates and the
-verifier's verdicts as they stand in that revision. Why: publishing can't be undone.
+personal data in sources, internal figures, customer or private organisations' information,
+unpublished or embargoed material, credentials, tokens and URLs with embedded keys, private
+paths and brief text, sources whose terms forbid it, and anything a source asked to be kept
+private. Where the organisation names a further reader for reports headed outside it
+(above), that reader reads it second. Only an accepted revision is published, with its
+sources, its dates and the verifier's verdicts as they stand in that revision. Why:
+publishing can't be undone.
 
 **Findings worth keeping.**
 <!-- adapt: Which knowledge layer keeps the findings worth keeping, who approves what goes in, and can anyone outside the organisation read it? -->
