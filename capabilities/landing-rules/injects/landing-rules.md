@@ -64,18 +64,24 @@ what someone else uses. Nothing else goes to a person by rule.
 **Publishing.**
 <!-- adapt: Who decides to publish a report outside the organisation, and what must a published report carry? -->
 The person who asked decides, for each report, on a card from its lead; where the report
-touches another person's area, that person decides it with them. Only an accepted revision
-is published, with its sources, its dates and the verifier's verdicts as they stand in that
-revision. Why: publishing can't be undone.
+touches another person's area, that person decides it with them. Before the card, the lead
+reads it for what must not leave the organisation: people named who haven't agreed to be,
+internal figures, sources whose terms forbid it, anything a source asked to be kept
+private. Only an accepted revision is published, with its sources, its dates and the
+verifier's verdicts as they stand in that revision. Why: publishing can't be undone.
 
 **Findings worth keeping.**
-<!-- adapt: Which knowledge layer keeps the findings worth keeping, and who approves what goes in? -->
+<!-- adapt: Which knowledge layer keeps the findings worth keeping, who approves what goes in, and can anyone outside the organisation read it? -->
 Once a report has landed, its lead writes each finding worth keeping into the knowledge
 layer the workspace selects, the way that layer says: dated, with its source, attributed
 to the effort and the accepted revision, and with the model generation it was measured on
 for a finding about agents. A finding for another person's area goes to that area's lead.
 With no knowledge layer, the effort's record keeps the accepted report, and that is the
-record. Why: a finding without its date and source can't be weighed later.
+record. The knowledge layer is read only inside the organisation. Where anyone outside it
+can read the layer, a finding written there is published: the publishing rule above applies
+to it, the read for what must not leave and the person's yes, before it is written. Why: a
+finding without its date and source can't be weighed later, and a knowledge base others
+can read is a publication.
 
 **The ownership record.** With one person, they own every area.
 <!-- adapt: With more than one person, who owns which areas? -->

@@ -28,6 +28,10 @@ developer, maintainer or code reviewer.
   revision, any further reader, the sources researchers may use, the one-way doors,
   publishing, the findings worth keeping, the ownership record, and where records are
   kept.
+- Writing a finding to a knowledge layer that people outside the organisation can read is
+  publishing: the landing rules' "Findings worth keeping" and `/land-the-report` apply the
+  publishing rule to it (the read for what must not leave, and the person's yes), and its
+  adapt point asks who can read the layer.
 - `souls/`: `dispatcher`, `research-lead`, `researcher` and `verifier`. No soul names a
   harness or a model; the lead picks its children's models at spawn.
 
