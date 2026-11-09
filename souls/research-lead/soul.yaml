@@ -1,0 +1,8 @@
+schemaVersion: 2
+name: research-lead
+description: The generalist research lead. A fresh instance owns one research effort from the question to the accepted report, reading the knowledge each question needs, sends one researcher per angle and the verifier on the claims the report leans on, and retires when it is done.
+# It frames, plans, writes and lands; researchers and the verifier do the reading and the checking.
+work: directory
+capabilities:
+  oats.research-lead: { from: here }
+  oats.landing-rules: { from: here }
