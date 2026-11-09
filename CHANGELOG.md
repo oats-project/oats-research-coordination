@@ -67,7 +67,8 @@ checkpoint recipe the skills point to moves from `/coordinate-developers` to
   it" lists the researcher, the verifier, an expert soul and a soul with an environment,
   not the developer and the code reviewer; the harness names and the multi-agent mode's
   name are dropped; a probe needing a repository gets `--repo`/`--base` without pointing to
-  `/coordinate-developers`; the checkpoint points to `/plan-the-angles`. Its adapt marker
+  `/coordinate-developers`; the brief's artefacts are a report or a brief at its revision
+  and a source at its date, not a spec; the checkpoint points to `/plan-the-angles`. Its adapt marker
   (probes in parallel for one decision) is kept, and is the cap on researchers too.
 - `/findings-and-blocks`: step 1's small fix becomes a mechanical correction in your area
   (a dead link, a wrong date, a broken citation), made by the lead in a new revision; a

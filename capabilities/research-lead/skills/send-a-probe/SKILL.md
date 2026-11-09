@@ -106,8 +106,8 @@ A probe that needs a repository's contents also gets `--repo <clone> --base <bra
 
 ## The brief
 - the one question, and in one line why the plan needs it;
-- the artefact at its exact version: a spec at its commit, a spike's branch at its head, a
-  document at its revision;
+- the artefact at its exact version: a report or a brief at its revision, a source at its
+  date, a spike's branch at its head;
 - what to report: a verdict, the evidence, a recommendation;
 - that it reports to you once, changes nothing outside its own scratch space, decides
   nothing, and retires on answer.
