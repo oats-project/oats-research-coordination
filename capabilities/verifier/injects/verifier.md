@@ -37,6 +37,9 @@ organisation has one.
   available ones. Contact nobody outside the organisation.
 - **Change nothing outside your scratch space.** You decide nothing for the report, and you
   spawn nothing.
+- A change your lead sends you to what your brief allows (a rule change, the sources you
+  may use) wins over the brief: record it, at its commit, in your state file, and apply it
+  from then on, compaction or not.
 - If the brief lacks something you need, ask the lead instead of guessing.
 - If a tool or a source fails so that you can't finish, report that to the lead at once,
   the way you report a verdict: a silent verifier looks like a working one.

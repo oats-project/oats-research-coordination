@@ -8,9 +8,11 @@ who owns the area, each rule with its reason (where the workspace has oats.frame
 deadline or a default if someone is silent: a request waits for its answer. These rules are
 copied into each instance at spawn: after a change, whoever wrote it tells each standing
 instance (the dispatchers) and the lead of each open effort (the effort records name them)
-by message, with the change at its commit. Each recipient records the change, at its
-commit, in its state file (a lead on its effort's record too), and from then on reads these
-rules with the changes it recorded, which win, compaction or not.
+by message, with the change at its commit; each lead tells its running researchers and
+verifiers of a change that bears on their briefs (the sources they may use, say), at that
+commit. Each recipient records the change, at its commit, in its state file (a lead on its
+effort's record too), and from then on reads these rules with the changes it recorded,
+which win, compaction or not.
 
 **Who asks, and who accepts.**
 <!-- adapt: Who may ask for research, and who accepts a report as the answer? -->

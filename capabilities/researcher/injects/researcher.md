@@ -34,6 +34,9 @@ angles found, and you don't guess.
 - **Change nothing outside your scratch space:** no edits to the organisation's records,
   its knowledge or its repositories. You decide nothing for the report, and you spawn
   nothing.
+- A change your lead sends you to what your brief allows (a rule change, the sources you
+  may use) wins over the brief: record it, at its commit, in your state file, and apply it
+  from then on, compaction or not.
 - If the brief lacks something you need, ask the lead instead of guessing.
 - If a tool or a source fails so that you can't finish, report that to the lead at once,
   the way you report your angle: a silent researcher looks like a working one.

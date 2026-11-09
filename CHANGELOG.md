@@ -60,16 +60,17 @@ checkpoint recipe the skills point to moves from `/coordinate-developers` to
   contents" is dropped and "contacting anyone outside it" joins the one-way doors; "which
   lane" becomes "which area"; "a rebase or a new head" becomes "an angle or a new
   revision"; the sentence on a merge kept for a person becomes the report handed to the
-  person who asked for acceptance, a hand-off and not a card (`/land-the-report`).
-- `/send-a-probe`: an adversarial review's "never of code under review" becomes "the
-  claims a report leans on go to the verifier" (`/check-the-claims`); "Already known?"
-  looks in the knowledge layer, earlier reports, published work and the code; "Who answers
-  it" lists the researcher, the verifier, an expert soul and a soul with an environment,
-  not the developer and the code reviewer; the harness names and the multi-agent mode's
-  name are dropped; a probe needing a repository gets `--repo`/`--base` without pointing to
+  person who accepts it, a hand-off and not a card (`/land-the-report`).
+- `/send-a-probe`: an adversarial review's "never of code under review" becomes "the claims
+  a report leans on go to the verifier" (`/check-the-claims`); "Already known?" looks in the
+  knowledge layer, earlier reports, published work and the code; "Who answers it" lists the
+  researcher, the verifier, an expert soul and a soul with an environment, not the developer
+  and the code reviewer; the harness names and the multi-agent mode's name are dropped; a
+  probe needing a repository gets `--repo`/`--base` without pointing to
   `/coordinate-developers`; the brief's artefacts are a report or a brief at its revision
-  and a source at its date, not a spec; the checkpoint points to `/plan-the-angles`. Its adapt marker
-  (probes in parallel for one decision) is kept, and is the cap on researchers too.
+  and a source at its date, not a spec; the checkpoint points to `/plan-the-angles`. Its
+  adapt marker (probes in parallel for one decision) is kept, and is the cap on researchers
+  too.
 - `/findings-and-blocks`: step 1's small fix becomes a mechanical correction in your area
   (a dead link, a wrong date, a broken citation), made by the lead in a new revision; a
   correction that changes a claim goes to step 2 and the verifier; a developer's findings
@@ -92,7 +93,10 @@ checkpoint recipe the skills point to moves from `/coordinate-developers` to
   probes.
 
 **`oats.landing-rules`**: the shape and the opening paragraph are engineering's, with
-dispatchers and research leads as its readers; the rules are research's.
+dispatchers and research leads as its readers, and "each lead tells its developers" becomes
+"each lead tells its running researchers and verifiers" of a change that bears on their
+briefs; the rules are research's. The researcher's and the verifier's injects record such a
+change and apply it over their brief.
 
 **The repository:** `LICENSE`, the vendored schemas (OATS v0.69.7), the CI workflow (its
 actions pinned to the same SHAs), `package.json`, the validator and its tests, adapted to

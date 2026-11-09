@@ -85,10 +85,12 @@ records it and never asks again.
 
 A month later the person wants a public post from the report. Publishing outside the
 organisation can't be undone, so the lead sends one card (`/land-the-report`, "Publishing"):
-the accepted revision, where it would go, and what it carries. Before the card it reads the
-report for what must not leave: an internal revenue figure, which the card names. On their
-yes it publishes that revision, without the figure, and tells them in one line that it is
-out. A request to publish from anyone else reaches the person only as the lead's card.
+where it would go, and what it carries. Before the card it reads the report for what must
+not leave: an internal revenue figure. It takes the figure out in a new revision; the claim
+that leaned on it changes, so a fresh verifier checks it and the person accepts the new
+revision. The card names that revision and what was taken out. On their yes the lead
+publishes that revision unchanged, and tells them in one line that it is out. A request to
+publish from anyone else reaches the person only as the lead's card.
 
 ## A step that stalls
 
