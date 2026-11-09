@@ -45,13 +45,13 @@ before next quarter's plan."
    reasoning. Briefed to disprove, it reads every source itself: four hold, one is weak
    (the source measured self-serve plans only, and the claim dropped that), one is wrong
    (its figure came from another table). The lead narrows the weak one, corrects the wrong
-   one, and follows what it changes: one conclusion softens. The corrected claim goes to a
-   fresh verifier at the new revision, never the first: it holds. The lead writes
+   one, and follows what it changes: one conclusion softens. Both changed claims go to a
+   fresh verifier at the new revision, never the first: both hold. The lead writes
    `CHECKED at <revision>` and retires both verifiers.
 7. **The person accepts it** (`/land-the-report`, `/land-on-agreement`). The lead hands the
    person the report at its checked revision, in the effort's thread: the answer in three
-   lines, what it doesn't answer, the weak claim. They accept it as the answer; the lead
-   records `ACCEPTED by <person>, <link>: <their words>`.
+   lines, what it doesn't answer, the claim narrowed to self-serve plans. They accept it as
+   the answer; the lead records `ACCEPTED by <person>, <link>: <their words>`.
 8. **What is worth keeping.** The lead writes three findings into the knowledge layer, one
    entry each: the finding as narrow as the report states it, its source and date, its
    check, and the effort and accepted revision it came from.

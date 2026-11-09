@@ -69,7 +69,7 @@ around it, and the evidence the design rests on.
   - `oats.research-lead`: `/frame-the-question`, `/plan-the-angles`, `/send-a-probe`,
     `/check-the-claims`, `/write-the-report`, `/land-the-report`, `/hand-off`,
     `/ask-a-person`, `/land-on-agreement`, `/across-people`, `/findings-and-blocks`. The
-    last six and `/send-a-probe` are the lead's shared skills, taken from the engineering
+    last five and `/send-a-probe` are the lead's shared skills, taken from the engineering
     template's expert at template-v2.1.0 and changed where they named a pull request, a
     developer or a maintainer ([CHANGELOG.md](CHANGELOG.md) lists each change).
   - `oats.researcher`: `/research-an-angle`, `/report-the-angle`.
