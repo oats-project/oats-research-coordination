@@ -1,6 +1,9 @@
 # Changelog
 
-## Unreleased
+## template-v1.0.1 - 2026-11-10
+
+A probe starts at the remote's commit. For a copy of template-v1.0.0, the line says what to
+port.
 
 ### A probe starts at the remote's commit
 
