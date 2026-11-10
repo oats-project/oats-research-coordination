@@ -102,7 +102,20 @@ Spawn it as your child, the brief as its task, with a name no instance has had:
 ```bash
 oats spawn <soul> --parent "$OATS_INSTANCE" --same-work --purpose <probe-slug> --task-file <probe.md>
 ```
-A probe that needs a repository's contents also gets `--repo <clone> --base <branch>`.
+A probe that needs a repository's contents, where that is its soul's own repository, gets
+neither `--repo` nor `--base`: its worktree starts at the commit the spawn observed on the
+remote. Where it is another repository, the probe also gets
+`--repo <clone> --base origin/<its default branch>`. `--base` names a ref in the clone,
+read there and never fetched: a bare branch name is the clone's local branch, however far
+behind, and `origin/<branch>` is as fresh as the clone's last fetch. Before you apply,
+preview the same command with `--preview` and check its start point,
+`from <ref or repository>@<commit>`, against the remote:
+`git -C <clone> ls-remote origin <its default branch>`. If they differ, don't apply. For
+the soul's own repository the remote moved since the preview: preview again. For another,
+the clone is behind: update its `origin/<its default branch>`, then preview again. Name
+the destination, so the fetch updates that ref whatever branches the clone tracks:
+`git -C <clone> fetch origin refs/heads/<branch>:refs/remotes/origin/<branch>`, with
+`<branch>` its default branch.
 
 ## The brief
 - the one question, and in one line why the plan needs it;
