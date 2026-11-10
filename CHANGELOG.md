@@ -2,6 +2,22 @@
 
 ## Unreleased
 
+### A probe starts at the remote's commit
+
+**`oats.research-lead`**
+- `/send-a-probe`, fixed: a probe that needs its soul's own repository gets neither
+  `--repo` nor `--base`, and its worktree starts at the commit the spawn observed on the
+  remote. One that needs another repository gets `--base origin/<its default branch>`.
+  Either way, before applying, the lead checks the preview's start point
+  (`from <ref or repository>@<commit>`) against
+  `git -C <clone> ls-remote origin <its default branch>`, and fetches the clone or previews
+  again where they differ. Before, the probe got `--base <branch>`, which the kernel reads
+  as a ref in the clone, never fetched: the probe started at the clone's local branch,
+  however far behind the remote. It follows the engineering template's same fix to
+  `/coordinate-developers` and `/send-a-probe` (oats-project/oats-engineering-coordination,
+  "A developer starts at the remote's commit").
+  Port: replace your copy's line in `/send-a-probe` with the new paragraph.
+
 ## template-v1.0.0 - 2026-11-10
 
 The first release of the research template, in its own repository,
