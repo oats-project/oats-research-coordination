@@ -7,8 +7,8 @@ into your own workspace and shape them with [ADAPTING.md](ADAPTING.md).
 Each way of working has a template of its own, named `oats-<way of working>-coordination`.
 This one is for research: work that ends in a finding or a report, not a pull request (a
 market study, a technical comparison, the research behind a design). Engineering's is
-oats-project/oats-engineering-coordination; oats-scientific-research-coordination is
-coming.
+oats-project/oats-engineering-coordination, and scientific research's, released at
+template-v1.0.0, is oats-project/oats-scientific-research-coordination.
 
 ## The way of working
 
