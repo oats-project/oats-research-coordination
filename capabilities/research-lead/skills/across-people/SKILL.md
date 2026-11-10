@@ -53,5 +53,5 @@ expert.
 Never address another person's researchers or verifiers. Never change what another
 person's area holds without their decision on the effort.
 
-Taken from the engineering template's engineering-expert, template-v2.1.0; changed where it
+Taken from the engineering template's engineering-expert, template-v3.0.1; changed where it
 named a pull request, a developer, a maintainer, a merge, paths or lanes.

@@ -13,11 +13,14 @@ template-v1.0.0, is oats-project/oats-scientific-research-coordination.
 ## The way of working
 
 **The design never splits a problem; it splits responsibility and context.** One lead owns
-each question from framing to an accepted report, on a fresh instance. Helpers add a fresh
-window, a cleaner read, an area's knowledge or an environment; for proper work they are
-OATS instances the person can see, and one that checks work runs on a different model.
-Researchers are the lead's probes, one angle each, in parallel. A verifier, briefed to
-disprove, checks the claims the report leans on: it is a role, not an option. Every
+each question from framing to an accepted report, on a fresh instance. An extra agent earns
+its place by splitting context, testing, specialisation or parallel work; each is a helper
+with one closed task, an OATS instance the person can see, and one that checks work runs
+on a different model. The lead decides who researches each angle: itself for a single
+small angle, researchers where one protects its context, reads in parallel or specialises,
+and a question with several angles always goes to researchers, one angle each, in
+parallel. A verifier, briefed to disprove, checks the claims the report leans on, the
+lead's own included: it is a role, not an option. Every
 hand-off is a message about a finished artefact at its exact reference. People give
 direction and decisions, as one card with a recommendation, with no deadline and no
 default if they are silent. A report lands when the person who asked (or whoever the landing
@@ -28,11 +31,11 @@ person or several. The template's roles:
 
 - **Dispatcher,** for each person who wants a front door. It reads a request against the
   record, starts a fresh lead for it, introduces that lead once and steps aside. It never
-  relays. It is engineering's, unchanged.
+  relays. It is engineering's, at template-v3.0.1, unchanged.
 - **Research lead,** one soul per way of working that plainly differs, plus a generalist.
-  Its instance frames the question with the person who asked, plans the angles, sends a
-  researcher for each, has the load-bearing claims checked, writes the report, lands it and
-  retires. It never checks its own claims.
+  Its instance frames the question with the person who asked, plans the angles, researches
+  a single small one itself or sends a researcher for each, has the load-bearing claims
+  checked, writes the report, lands it and retires. It never checks its own claims.
 - **Researcher,** fresh for each angle: the lead's OATS child. It opens primary sources,
   quotes the figure each finding rests on, dates it, names the model generation of a
   finding about agents, gives the strongest evidence against it, reports once and retires.
@@ -65,12 +68,12 @@ around it, and the evidence the design rests on.
 - **`capabilities/`:** five working capabilities, each an inject (the always-on briefing)
   plus the skills an agent loads when it needs them.
   - `oats.dispatcher`: `/dispatch`. Taken unchanged from the engineering template,
-    template-v2.1.0.
-  - `oats.research-lead`: `/frame-the-question`, `/plan-the-angles`, `/send-a-probe`,
+    template-v3.0.1.
+  - `oats.research-lead`: `/frame-the-question`, `/plan-the-angles`, `/send-a-helper`,
     `/check-the-claims`, `/write-the-report`, `/land-the-report`, `/hand-off`,
     `/ask-a-person`, `/land-on-agreement`, `/across-people`, `/findings-and-blocks`. The
-    last five and `/send-a-probe` are the lead's shared skills, taken from the engineering
-    template's expert at template-v2.1.0 and changed where they named a pull request, a
+    last five and `/send-a-helper` are the lead's shared skills, taken from the engineering
+    template's expert at template-v3.0.1 and changed where they named a pull request, a
     developer or a maintainer ([CHANGELOG.md](CHANGELOG.md) lists each change).
   - `oats.researcher`: `/research-an-angle`, `/report-the-angle`.
   - `oats.verifier`: `/disprove-the-claims`.

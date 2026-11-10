@@ -69,7 +69,7 @@ defaults:
   mkdirSync(memberSrc);
   for (const dir of ["capabilities", "souls"]) cpSync(join(REPO, dir), join(memberSrc, dir), { recursive: true });
   // The copy's release record (ADAPTING.md, section 4): a plain file the kernel must ignore.
-  writeFileSync(join(memberSrc, "capabilities", "TEMPLATE-RELEASE"), "template: oats-project/oats-research-coordination\nrelease: template-v1.0.1\n");
+  writeFileSync(join(memberSrc, "capabilities", "TEMPLATE-RELEASE"), "template: oats-project/oats-research-coordination\nrelease: template-v2.0.0\n");
   writeFileSync(join(memberSrc, "oats-membership.yaml"), `schemaVersion: 2
 workspace: file://${workspaceBare}
 `);
@@ -128,7 +128,7 @@ async function checkKernel(t, label, ref) {
 
   const lead = preview("research-lead");
   assert.deepEqual(modules(lead), ["oats.landing-rules", "oats.research-lead"]);
-  assert.deepEqual(skills(lead), ["across-people", "ask-a-person", "check-the-claims", "findings-and-blocks", "frame-the-question", "hand-off", "land-on-agreement", "land-the-report", "plan-the-angles", "send-a-probe", "write-the-report"]);
+  assert.deepEqual(skills(lead), ["across-people", "ask-a-person", "check-the-claims", "findings-and-blocks", "frame-the-question", "hand-off", "land-on-agreement", "land-the-report", "plan-the-angles", "send-a-helper", "write-the-report"]);
 
   const researcher = preview("researcher");
   assert.deepEqual(modules(researcher), ["oats.researcher"], "a researcher composes only its own role");

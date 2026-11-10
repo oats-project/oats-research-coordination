@@ -25,10 +25,13 @@ before next quarter's plan."
 3. **Already known, and the angles** (`/plan-the-angles`). Last year's report is a lead,
    not an answer: its figures are dated. The lead lists three angles: the one it expects
    (usage-based pricing raises adoption), the one it doubts (it makes revenue too hard to
-   predict), and what comparable products publish about their own pricing. It sends one
-   `researcher` per angle, in parallel, as its OATS children, across two model families,
-   each briefed with its one angle and none of the lead's expectations, and sets a
-   checkpoint on each.
+   predict), and what comparable products publish about their own pricing, each a closed
+   question whose possible answers it can write down. A question with three angles is the
+   parallel case, so none is the lead's to read itself: it records one line per angle, then
+   sends one `researcher` per angle, in parallel, as its OATS children, across two model
+   families. Each brief is closed: its one angle with its possible answers and none of the
+   lead's expectations, the sources it may use, and when to stop. It sets a checkpoint on
+   each.
 4. **The researchers report** (`/research-an-angle`, `/report-the-angle`). Each opens
    primary sources, quotes the figure each finding rests on, dates it, and gives the
    strongest evidence against it. One notes that its best figure is a vendor's account of
@@ -42,7 +45,9 @@ before next quarter's plan."
 6. **The verifier checks the claims** (`/check-the-claims`). A fresh `verifier`, the lead's
    child, on a model family neither the researchers nor the lead run on, gets the six
    claims and their cited sources at the report's revision, and nothing of anyone's
-   reasoning. Briefed to disprove, it reads every source itself: four hold, one is weak
+   reasoning. Briefed to disprove, it reads every source itself, and each verdict comes
+   with its Checked line: the source it opened and where, and the counter-evidence it
+   searched for. Four hold, one is weak
    (the source measured self-serve plans only, and the claim dropped that), one is wrong
    (its figure came from another table). The lead narrows the weak one, corrects the wrong
    one, and follows what it changes: one conclusion softens. Both changed claims go to a
@@ -60,10 +65,24 @@ before next quarter's plan."
 
 ## A small question
 
-"Does the provider we use publish its uptime by region?" One angle, one researcher, and a
-verifier on the two claims the answer leans on. A question that is cheap to get wrong needs
-little fan-out, but no report skips the verifier: the claims it leans on are checked by
-someone other than their author.
+"Does the provider we use publish its uptime by region?" One small angle, answered from
+the provider's own status pages and terms, which the lead can name before it starts: none
+of the three cases for a researcher holds, so the lead reads it itself, the way a
+researcher would, and records that in the report's method (`/plan-the-angles`, "Who
+researches each angle"). Then a fresh verifier, on another model, checks the two claims
+the answer leans on. A question that is cheap to get wrong needs little fan-out, but no
+report skips the verifier: the lead never checks its own claims, an angle it read itself
+included.
+
+## A second effort
+
+A researcher's report notes, under "On the way", that no source measures churn on switching
+for products like this one, and the person wants that answered too, on its own. It bears
+on the pricing effort, so its lead is the first lead's sibling (`/hand-off`, "To whom"):
+the first lead starts it with the question as its task, opens its record linked both ways,
+and tells the person at once, in the effort's thread, the new lead's exact name and where
+to talk to it. A step the pricing report itself needs never goes to a second lead: it
+stays in the effort, with a helper.
 
 ## A page that tries to instruct an agent
 
@@ -127,6 +146,13 @@ maintainer's read of its reports names it here, at the landing rules' adapt mark
 
 Each source below is dated, and each figure is quoted from the source or from what was
 checked against it. Where a source was read only through others, it says so.
+
+Three rules come from the engineering template, and so does their evidence: who
+researches each angle (an extra agent only for context, parallel work or specialisation),
+an angle and its findings kept with one author rather than split by kind of work, and a
+verdict that says what it checked. The engineering template's walkthrough cites the
+Anthropic articles behind them, under "Where this comes from"
+([oats-project/oats-engineering-coordination, template-v3.0.1](https://github.com/oats-project/oats-engineering-coordination/blob/template-v3.0.1/docs/how-the-work-flows.md#where-this-comes-from)).
 
 ### This design's own research (2 November 2026)
 

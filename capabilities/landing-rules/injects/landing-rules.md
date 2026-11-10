@@ -42,10 +42,14 @@ revision before it goes for acceptance, and waits for its verdict. Why: a report
 the acceptance of the person who accepts it; another reader is added only where the
 organisation already requires one.
 
-**Who does the work.** The lead frames the question, plans the angles, writes the report
-and lands it. Researchers read the sources, one angle each; the verifier checks the claims.
-Both are the lead's probes: each reports once and retires. The lead never checks its own
-claims, and no researcher checks its own. Why: one agent holds the whole question, and a
+**Who does the work.** The lead frames the question, plans the angles, decides who
+researches each, writes the report and lands it. It researches a single small angle
+itself; a researcher reads an angle where one protects the lead's context, reads in
+parallel or specialises, one angle each, and a question with several angles always goes to
+researchers. The verifier checks the claims: always a fresh instance. All are the lead's
+helpers, each with one closed task: each reports once and retires. The lead never checks
+its own claims, an angle it researched itself included, and no researcher checks its own.
+Why: one agent holds the whole question, an extra agent costs a context and a brief, and a
 claim is checked by someone other than its author.
 
 **Sources.**

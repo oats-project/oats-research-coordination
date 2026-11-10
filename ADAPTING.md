@@ -49,19 +49,28 @@ a collision; settle it before you copy:
 
 These have no adapt markers. A copy that changes one is no longer this way of working.
 
-1. **The design never splits a problem; it splits responsibility and context.** One agent
-   holds a whole question. An extra agent earns its place by adding context: a fresh
-   window, a cleaner read, an area's knowledge, an environment.
+1. **The design never splits a problem; it splits responsibility and context.** An extra
+   agent earns its place by one of four reasons: splitting context (a fresh window, a
+   cleaner read), testing a theory or an approach in a fresh context, specialisation (an
+   area's sources, environment, tools or knowledge, or instructions that would conflict
+   with the lead's), or parallel work. Otherwise one agent holds a whole question.
 2. **One lead per effort,** on a fresh instance, from framing to an accepted report,
-   compacting and never respawning. Its children are probes, one question each, never
-   co-planners or co-authors: a researcher per angle, the verifier for the claims.
+   compacting and never respawning. It decides who researches each angle: itself for a
+   single small angle; researchers where one protects its context, reads in parallel or
+   specialises; a question with several angles always goes to researchers. Its children
+   are helpers, each with one closed task, never co-planners or co-authors: a question to
+   answer (a probe: a researcher's angle, the verifier's claims, any other question), or a
+   scoped piece of the effort that needs another soul's capabilities. The plan and the
+   report stay the lead's. Another area's step of the effort goes to a helper, never to a
+   second lead; a lead for another, related effort is the first lead's sibling, and the
+   person is told its name.
 3. **A claim is never checked by its author.** The verifier, a fresh instance briefed to
    disprove, checks every claim a report leans on before it goes for acceptance, and a
    fresh one checks each claim a revision changes. A probe never checks its own claim, and
-   the lead never checks its own. The verifier is a role, not an option: researchers of one
-   model, briefed by one lead, echo one another.
+   the lead never checks its own, an angle it researched itself included. The verifier is
+   a role, not an option: researchers of one model, briefed by one lead, echo one another.
 4. **Proper work goes to OATS children, and checks are model-diverse.** Every researcher,
-   every verifier, every probe, and any work that needs a soul's knowledge or an
+   every verifier, every other helper, and any work that needs a soul's knowledge or an
    environment goes to an OATS child: visible to the person (its status, the Desktop), with
    its own messaging and knowledge, and retired on record. A harness's native subagent,
    invisible to everyone but its parent, is for a small investigation or task that directly
@@ -86,8 +95,9 @@ These have no adapt markers. A copy that changes one is no longer this way of wo
    its confidence and what would change it. Every angle tried is recorded, not only the
    winners.
 10. **A finding goes to its area's owner** as a recommendation, never to a person as an FYI.
-11. **Every short-lived instance has a retire rule:** researchers and verifiers once they
-    have answered, leads when their effort is done.
+11. **Every short-lived instance has a retire rule:** researchers, verifiers and other
+    probes once they have answered, helpers with a scoped piece once its artefact is on the
+    effort's record, leads when their effort is done.
 12. **The source is the truth about a claim.** Split knowledge before souls, and skills
     before souls. Knowledge an upstream owns stays upstream: the node holds only the
     organisation's findings and lessons about it.
@@ -117,17 +127,19 @@ A copy is adapted when no marker is left; until then, the markers left are its o
 - **With more than one person, who owns which areas?** Assumes one person, who owns everything. With several, write one line per area: the subjects and records it holds, and its owner. Default: one owner.
 - **Where are the effort records and the reports kept?** Assumes one item per effort in the tasks layer, with each report revision linked from it and the verifier's verdicts beside the revision they checked. Never in the rules themselves: they are copied into each instance at spawn and can't change while work runs. Default: that.
 
-### `capabilities/research-lead/skills/send-a-probe/SKILL.md`
+### `capabilities/research-lead/skills/send-a-helper/SKILL.md`
 - **How many probes may a lead run in parallel for one decision?** This is the parallel cap for researchers: researchers are the lead's probes, so it bounds the researchers for one question too (`plan-the-angles` says so). Assumes up to 4, one per angle. A researcher costs a full instance's run, so name a lower cap where runs are expensive, or a higher one where questions are worth it. Default: up to 4.
+- **Which specialist souls can a lead call as helpers, and what does each bring (sources, an environment, skills, a domain)?** Assumes the template's roster: the researcher for an angle, the verifier for the claims, an expert soul for an area's knowledge or a scoped piece of its area, and a soul with an environment where the organisation has one. Name the organisation's own: each researcher copy and the environment or licensed sources it brings (section 1), each area's expert soul and what it can take on as a lead's child. Default: the template's roster.
 
 ### `capabilities/research-lead/skills/plan-the-angles/SKILL.md`
+- **What counts as a small angle here, which a lead may research itself?** Assumes a single angle, answered from a few sources the lead can name before it starts (a published figure, a standard's text, an official record). A question with several angles always goes to researchers, whatever this answer says, and a fresh verifier checks every claim the report leans on either way (section 2, principles 2 and 3). An organisation may narrow it (no angle the lead reads itself where a decision is costly to get wrong) or name its own examples. Default: the assumption.
 - **Which model families does this organisation have for researchers and the verifier?** Assumes the lead finds out at spawn, by preview. Name the model families this organisation can launch, and through which launch configurations, so the lead varies its researchers across them and keeps one for the verifier that no researcher and no lead runs on (section 2, principle 4). The organisation may also pin the verifier and the researchers to a family other than the leads': in each soul's `launch:` (`harness` and `model`), or in each machine's `oats-local.yaml` `souls.launch`. The template's own souls name no model. Default: vary them wherever the organisation has more than one family.
 
 ## 4. Record the template release
 
 Every copied capability records the template release it came from, in its `oats.json`
 description. The template's descriptions already end with that sentence:
-"Copied from the research template, template-v1.0.1." Keep it as it is when you copy, and
+"Copied from the research template, template-v2.0.0." Keep it as it is when you copy, and
 set `version` to the copy's own numbering from then on. The template's own validator,
 which requires `version` to be the template release, stays with the template (section 1):
 nothing in the copy checks it. The dispatcher's description, and the shared skills of
@@ -138,7 +150,7 @@ Souls carry no such record, so write one for the whole copy, in the host reposit
 `capabilities/TEMPLATE-RELEASE` (a plain file, which OATS ignores):
 ```
 template: oats-project/oats-research-coordination
-release: template-v1.0.1
+release: template-v2.0.0
 commit: <the full commit SHA that tag points to>
 capabilities: <the ids you copied>
 souls: <the souls you copied, under their names in the copy>
@@ -152,7 +164,7 @@ template, separated by a blank line.
 
 An organisation whose groups use both templates keeps one dispatcher and one set of
 landing rules:
-- **`oats.dispatcher`:** this template's is engineering's at template-v2.1.0, unchanged.
+- **`oats.dispatcher`:** this template's is engineering's at template-v3.0.1, unchanged.
   Keep the copy already in the workspace (take up the newer engineering release in it if
   yours is older), and add `research-lead` and the area it covers to each dispatcher
   soul's `AGENTS.md` roster.
@@ -160,7 +172,7 @@ landing rules:
   a section of their own ("How a report lands"), each with its adapt point answered. The
   rules are the organisation's, one text for all its ways of working.
 - **The lead's shared skills:** `oats.research-lead` carries its own copies of
-  `hand-off`, `ask-a-person`, `send-a-probe`, `findings-and-blocks`, `across-people` and
+  `hand-off`, `ask-a-person`, `send-a-helper`, `findings-and-blocks`, `across-people` and
   `land-on-agreement`, under the same names as the engineering expert's. A soul composes
   one lead capability, never both, so the names never meet in one instance.
 
@@ -175,6 +187,14 @@ landing rules:
 - **A later release:** read [CHANGELOG.md](CHANGELOG.md) from the release your copy records
   up to the new one. Each skill's line says what to port. Port what fits, keep your
   adaptations, and update the release sentence in each capability you ported.
+- **A copy at template-v1.x renames `send-a-probe`** before it ports the rest of
+  template-v2.0.0:
+  1. Move `capabilities/research-lead/skills/send-a-probe/` to `send-a-helper/`, keeping
+     your answer to its adapt marker, and set its frontmatter `name: send-a-helper`.
+  2. In the lead's `oats.json`, replace `skills/send-a-probe` with `skills/send-a-helper`.
+  3. Change every skill reference to `send-a-probe` in the copy to `/send-a-helper`: the
+     injects, the skills, your adaptation notes, your docs and any test.
+  4. Check it as above: the lead's preview lists `send-a-helper` and no `send-a-probe`.
 - **A later engineering release:** the dispatcher and the shared skills follow
   engineering's. This template takes up engineering's changes to them at its next release,
   and its CHANGELOG says which engineering release each now names.

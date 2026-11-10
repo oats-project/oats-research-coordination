@@ -16,13 +16,15 @@ people. Read them once per effort, and again after a compaction. None in your br
 is a block (`/findings-and-blocks`); send no report for acceptance until it is settled.
 
 ## 1. Checked
-You never check your own claims, and no researcher checks its own. The claims the report
-leans on go to the verifier at the report's revision (`/check-the-claims`). In a new
+You never check your own claims, an angle you researched yourself included, and no
+researcher checks its own. The claims the report leans on go to the verifier at the report's
+revision (`/check-the-claims`). A verdict counts only with what it checked: a verdict
+without its Checked line goes back to that verifier, or the claim to a fresh one. In a new
 revision, each claim it finds weak you narrow to its evidence or show as weak; each one it
 finds wrong you correct or drop, and change what rested on it; and each verdict you dispute
 goes to a fresh verifier or is shown in the report as disputed, never relabelled by you.
-Once every claim the report leans on has its verdict at one revision, write
-`CHECKED at <revision>: <the verdicts, one line each>` on the effort's record.
+Once every claim the report leans on has its verdict at one revision, write `CHECKED at
+<revision>: <the verdicts, one line each>` on the effort's record.
 
 ## 2. A further reader
 Where your landing rules name one, hand it the report at its checked revision
@@ -106,11 +108,12 @@ An instance is **finished** when all of these hold:
   children, and refuses with `E_CHILDREN_RUNNING` when one won't stop.
 - **Never reuse a name:** a new instance never takes a retired one's name, which couldn't
   harvest.
-- **Your researchers, verifiers and other probes:** once they have answered
-  (`/send-a-probe`). A probe's work is its answer, and its scratch commits are not
-  delivered: skip the `oats instance git` check, and where
-  it has a work tree, retire it with `oats retire <probe> --discard-worktree`. Retire any
-  probe that hasn't answered too.
+- **Your helpers:** a helper with a scoped piece of work once its artefact is on the
+  effort's record and your questions are answered. **Your probes** (your researchers, your
+  verifiers and other helpers with a question): once they have answered (`/send-a-helper`).
+  A probe's work is its answer, and its scratch commits are not delivered: skip the
+  `oats instance git` check, and where it has a work tree, retire it with
+  `oats retire <probe> --discard-worktree`. Retire any probe that hasn't answered too.
 - **Yourself:** once your effort is finished (its report accepted, or the effort dropped,
   each finding with an owner, nothing waiting on you), retire your children, close the
   effort's record, run your final checkpoint, and send your person one done note in the
@@ -119,5 +122,5 @@ An instance is **finished** when all of these hold:
   same checks on yourself and retire yourself with `oats retire "$OATS_INSTANCE" --self`
   (the instance name is required).
 
-Taken from the engineering template's engineering-expert, template-v2.1.0; changed where it
+Taken from the engineering template's engineering-expert, template-v3.0.1; changed where it
 named a pull request, a developer, a maintainer, a merge or a release.
