@@ -67,9 +67,8 @@ things:
 - what to send back: its findings as things you can open, what it did not look at, and the
   closed questions that decide the matter, with what each would change.
 
-"Research X and come back with your findings" is a task with those four, and isn't one
-without them. What it returns frames the question; it is not the report's evidence until an
-angle has read it and the verifier has checked the claims.
+What it returns frames the question; it is not the report's evidence until an angle has
+read it and the verifier has checked the claims.
 
 ## Already known?
 Before you send a probe, and as every probe's first step: does it exist already, in your

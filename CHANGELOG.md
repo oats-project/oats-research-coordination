@@ -48,6 +48,9 @@ unchanged. For a copy of template-v2.0.1, port the passages below.
 - inject, changed: the helpers sentence ("every task one gets is closed: it reports once for
   the task and retires, a standing specialist only when its area is done"). Port: that
   sentence.
+- inject, changed: a lead tells all its running children of a rule change that bears on
+  their briefs, a standing specialist included, not only its researchers and verifiers.
+  Port: that sentence of the opening paragraph.
 
 **`oats.dispatcher`**
 - inject and `/dispatch`, changed: "One effort, one lead, from start to done", not "one
@@ -57,6 +60,10 @@ unchanged. For a copy of template-v2.0.1, port the passages below.
 **The repository**
 - `README.md` and `ADAPTING.md` (principle 2 and the markers): the lead leads one question,
   every task it gives a helper is closed, and a standing specialist stays for the effort.
+- Provenance: the dispatcher's description, `README.md` and `ADAPTING.md` (section 5) say it
+  is engineering's at template-v3.1.0, changed only where it names the lead's children; the
+  research lead's description says which shared skills are at template-v3.1.0. Port: those
+  sentences.
 
 ## template-v2.0.1 - 2026-11-11
 
