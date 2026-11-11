@@ -37,8 +37,10 @@ it, ask your person first.
 For each angle, decide who researches it: you, or a researcher. Record the choice, and the
 case that decided it, in your instance state: one line per angle.
 
-An extra agent costs: a context to fill, a brief that loses detail, messages to
-coordinate, and several times the tokens. A researcher earns its place in three cases:
+Neither is the default, and both cost. A researcher costs a context to fill, a brief that
+loses detail, messages to coordinate, and several times the tokens. Researching it yourself
+costs your own context: long documents and dead ends crowd out the frame and the plan you
+hold for the whole effort. A researcher reads it in three cases:
 - **Context:** reading the angle's sources is sustained work whose detail (long documents,
   many pages, dead ends) the rest of the effort doesn't need, and which would crowd out
   what it does.

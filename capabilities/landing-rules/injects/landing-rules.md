@@ -8,9 +8,9 @@ who owns the area, each rule with its reason (where the workspace has oats.frame
 deadline or a default if someone is silent: a request waits for its answer. These rules are
 copied into each instance at spawn: after a change, whoever wrote it tells each standing
 instance (the dispatchers) and the lead of each open effort (the effort records name them)
-by message, with the change at its commit; each lead tells its running researchers and
-verifiers of a change that bears on their briefs (the sources they may use, say), at that
-commit. Each recipient records the change, at its commit, in its state file (a lead on its
+by message, with the change at its commit; each lead tells its running children
+(researchers, verifiers and other helpers, a standing specialist included) of a change
+that bears on their briefs (the sources they may use, say), at that commit. Each recipient records the change, at its commit, in its state file (a lead on its
 effort's record too), and from then on reads these rules with the changes it recorded,
 which win, compaction or not.
 
@@ -47,7 +47,8 @@ researches each, writes the report and lands it. It researches a single small an
 itself; a researcher reads an angle where one protects the lead's context, reads in
 parallel or specialises, one angle each, and a question with several angles always goes to
 researchers. The verifier checks the claims: always a fresh instance. All are the lead's
-helpers, each with one closed task: each reports once and retires. The lead never checks
+helpers, and every task one gets is closed: it reports once for the task and retires, a
+standing specialist only when its area is done. The lead never checks
 its own claims, an angle it researched itself included, and no researcher checks its own.
 Why: one agent holds the whole question, an extra agent costs a context and a brief, and a
 claim is checked by someone other than its author.

@@ -115,6 +115,9 @@ An instance is **finished** when all of these hold:
   A probe's work is its answer, and its scratch commits are not delivered: skip the
   `oats instance git` check, and where it has a work tree, retire it with
   `oats retire <probe> --discard-worktree`. Retire any probe that hasn't answered too.
+  **A standing specialist:** once the plan has no more work in its area and what it
+  produced is on the effort's record, not after each task (`/send-a-helper`, "A standing
+  specialist").
 - **Yourself:** once your effort is finished (its report accepted, or the effort dropped,
   each finding with an owner, nothing waiting on you), retire your children, close the
   effort's record, run your final checkpoint, and send your person one done note in the
@@ -123,5 +126,5 @@ An instance is **finished** when all of these hold:
   same checks on yourself and retire yourself with `oats retire "$OATS_INSTANCE" --self`
   (the instance name is required).
 
-Taken from the engineering template's engineering-expert, template-v3.0.2; changed where it
+Taken from the engineering template's engineering-expert, template-v3.1.0; changed where it
 named a pull request, a developer, a maintainer, a merge or a release.
