@@ -244,5 +244,5 @@ for a fact.
 - Waiting on an instance, set its checkpoint first (`/plan-the-angles`, "Set a checkpoint
   before you wait").
 
-Taken from the engineering template's engineering-expert, template-v3.0.1; changed where it
+Taken from the engineering template's engineering-expert, template-v3.0.2; changed where it
 named a developer, the code reviewer, the code, a pull request or a harness.

@@ -73,7 +73,7 @@ around it, and the evidence the design rests on.
     `/check-the-claims`, `/write-the-report`, `/land-the-report`, `/hand-off`,
     `/ask-a-person`, `/land-on-agreement`, `/across-people`, `/findings-and-blocks`. The
     last five and `/send-a-helper` are the lead's shared skills, taken from the engineering
-    template's expert at template-v3.0.1 and changed where they named a pull request, a
+    template's expert at template-v3.0.2 and changed where they named a pull request, a
     developer or a maintainer ([CHANGELOG.md](CHANGELOG.md) lists each change).
   - `oats.researcher`: `/research-an-angle`, `/report-the-angle`.
   - `oats.verifier`: `/disprove-the-claims`.

@@ -1,5 +1,51 @@
 # Changelog
 
+## Unreleased
+
+A patch release for oats.okf 6.0, and the lead's shared skills follow engineering's
+template-v3.0.2.
+
+oats.okf 6.0 removes the knowledge harvester: an instance proposes its own knowledge, as a
+pull request on the knowledge base, and the knowledge layer's maintainer gates every merge.
+The texts that still launched, waited for or named the harvester now say the knowledge
+checkpoint and its outcome, naming no mechanism, and where they name done lines they name
+oats.okf 6.0's, as the engineering template's template-v3.0.2 does. For a copy of
+template-v2.0.0, port the lines below. The old lines map to the new: "done, harvested:
+<harvester>" is "done, proposed: <PR URLs>", "done, no harvest duty" is "done, no duty to
+propose", "done, harvest pending: <proposal>" is "done, proposal pending: <slug and why>",
+and "done, nothing to propose: <reason>" is new, for a checkpoint that found nothing worth
+proposing. A copy whose knowledge layer is not oats.okf words the lines as its layer does.
+
+**`oats.researcher`** and **`oats.verifier`**
+- inject, changed: the done line a researcher or a verifier sends is one of "done,
+  proposed: <PR URLs>", "done, nothing to propose: <reason>", "done, no duty to propose" or
+  "done, proposal pending: <slug and why>". Port: that sentence.
+
+**`oats.research-lead`**
+- `/land-on-agreement`, "Retire what's finished", changed: the knowledge condition is the
+  final knowledge checkpoint, run and its outcome recorded as the knowledge layer says, and
+  a proposal it opens there is in the knowledge layer's hands, not one of the PRs that must
+  land, so nobody waits for it; the done report says that checkpoint's outcome in one of
+  four lines, three of them finished and "done, proposal pending: <slug and why>" not
+  finished (retire nothing yet; it reports again with one of the three); and a retired
+  one's name is never reused because the records it left and the provenance of the
+  knowledge it proposed still name it. Port: those three bullets.
+
+### The shared skills follow engineering's template-v3.0.2
+
+- **`oats.research-lead`'s shared skills:** `/land-on-agreement` changes as above, after
+  engineering's at template-v3.0.2; the other five (`/hand-off`, `/ask-a-person`,
+  `/send-a-helper`, `/findings-and-blocks`, `/across-people`) didn't change in engineering
+  since template-v3.0.1. All six, and the lead's `oats.json` description, now name
+  engineering's template-v3.0.2. Port: their last sentence and that sentence of the
+  description.
+- **`oats.dispatcher`:** unchanged; engineering's template-v3.0.2 doesn't change it, and it
+  still names engineering's template-v3.0.1.
+
+### The repository
+- `README.md` names engineering's template-v3.0.2 for the shared skills, and
+  `docs/how-the-work-flows.md`'s lead runs its final knowledge checkpoint.
+
 ## template-v2.0.0 - 2026-11-10
 
 A major release: the research template takes up the engineering template's v3 changes, in

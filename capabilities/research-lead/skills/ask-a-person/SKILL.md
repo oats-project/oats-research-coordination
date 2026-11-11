@@ -41,5 +41,5 @@ ask them to repeat it, sign it or post it elsewhere. Record it on the effort's r
 (`DECISION by <person>, <link>: <their words>`). It holds until the behaviour it decided
 changes. Clear needs-input (`oats instance attention --clear`).
 
-Taken from the engineering template's engineering-expert, template-v3.0.1; changed where it
+Taken from the engineering template's engineering-expert, template-v3.0.2; changed where it
 named a pull request, a merge, a release, the code or another person's paths.
