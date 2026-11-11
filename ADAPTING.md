@@ -57,11 +57,13 @@ These have no adapt markers. A copy that changes one is no longer this way of wo
 2. **One lead per effort,** on a fresh instance, from framing to an accepted report,
    compacting and never respawning. It decides who researches each angle: itself for a
    single small angle; researchers where one protects its context, reads in parallel or
-   specialises; a question with several angles always goes to researchers. Its children
-   are helpers, each with one closed task, never co-planners or co-authors: a question to
-   answer (a probe: a researcher's angle, the verifier's claims, any other question), or a
-   scoped piece of the effort that needs another soul's capabilities. The plan and the
-   report stay the lead's. Another area's step of the effort goes to a helper, never to a
+   specialises; a question with several angles always goes to researchers. Leading is not
+   doing it all: its children are helpers, never co-planners or co-authors, and every task
+   it gives one is closed: a question to answer (a probe: a researcher's angle, the
+   verifier's claims, any other question), or a scoped piece of the effort that needs
+   another soul's capabilities. A helper for anything but an angle or the claims is an
+   expert, and one the effort keeps needing stays for the effort as a standing specialist.
+   The plan and the report stay the lead's. Another area's step of the effort goes to a helper, never to a
    second lead; a lead for another, related effort is the first lead's sibling, and the
    person is told its name.
 3. **A claim is never checked by its author.** The verifier, a fresh instance briefed to
@@ -129,7 +131,8 @@ A copy is adapted when no marker is left; until then, the markers left are its o
 
 ### `capabilities/research-lead/skills/send-a-helper/SKILL.md`
 - **How many probes may a lead run in parallel for one decision?** This is the parallel cap for researchers: researchers are the lead's probes, so it bounds the researchers for one question too (`plan-the-angles` says so). Assumes up to 4, one per angle. A researcher costs a full instance's run, so name a lower cap where runs are expensive, or a higher one where questions are worth it. Default: up to 4.
-- **Which specialist souls can a lead call as helpers, and what does each bring (sources, an environment, skills, a domain)?** Assumes the template's roster: the researcher for an angle, the verifier for the claims, an expert soul for an area's knowledge or a scoped piece of its area, and a soul with an environment where the organisation has one. Name the organisation's own: each researcher copy and the environment or licensed sources it brings (section 1), each area's expert soul and what it can take on as a lead's child. Default: the template's roster.
+- **How many standing specialists may a lead keep at once?** Assumes up to 3. Each is a full instance kept for the effort, so name a lower cap where instances are expensive, or a higher one where efforts are routinely large. Default: up to 3.
+- **Which specialist souls can a lead call as helpers, and what does each bring (sources, an environment, skills, a domain)?** Assumes the template's roster: the researcher for an angle, the verifier for the claims, an expert soul for any other knowledge or judgment (a test of an approach, a read of the plan, a scoped piece of its area, a standing specialist), and a soul with an environment where the organisation has one. Name the organisation's own: each researcher copy and the environment or licensed sources it brings (section 1), each area's expert soul and what it can take on as a lead's child. Default: the template's roster.
 
 ### `capabilities/research-lead/skills/plan-the-angles/SKILL.md`
 - **What counts as a small angle here, which a lead may research itself?** Assumes a single angle, answered from a few sources the lead can name before it starts (a published figure, a standard's text, an official record). A question with several angles always goes to researchers, whatever this answer says, and a fresh verifier checks every claim the report leans on either way (section 2, principles 2 and 3). An organisation may narrow it (no angle the lead reads itself where a decision is costly to get wrong) or name its own examples. Default: the assumption.
@@ -139,7 +142,7 @@ A copy is adapted when no marker is left; until then, the markers left are its o
 
 Every copied capability records the template release it came from, in its `oats.json`
 description. The template's descriptions already end with that sentence:
-"Copied from the research template, template-v2.0.1." Keep it as it is when you copy, and
+"Copied from the research template, template-v2.1.0." Keep it as it is when you copy, and
 set `version` to the copy's own numbering from then on. The template's own validator,
 which requires `version` to be the template release, stays with the template (section 1):
 nothing in the copy checks it. The dispatcher's description, and the shared skills of
@@ -150,7 +153,7 @@ Souls carry no such record, so write one for the whole copy, in the host reposit
 `capabilities/TEMPLATE-RELEASE` (a plain file, which OATS ignores):
 ```
 template: oats-project/oats-research-coordination
-release: template-v2.0.1
+release: template-v2.1.0
 commit: <the full commit SHA that tag points to>
 capabilities: <the ids you copied>
 souls: <the souls you copied, under their names in the copy>

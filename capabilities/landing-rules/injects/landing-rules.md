@@ -47,7 +47,8 @@ researches each, writes the report and lands it. It researches a single small an
 itself; a researcher reads an angle where one protects the lead's context, reads in
 parallel or specialises, one angle each, and a question with several angles always goes to
 researchers. The verifier checks the claims: always a fresh instance. All are the lead's
-helpers, each with one closed task: each reports once and retires. The lead never checks
+helpers, and every task one gets is closed: it reports once for the task and retires, a
+standing specialist only when its area is done. The lead never checks
 its own claims, an angle it researched itself included, and no researcher checks its own.
 Why: one agent holds the whole question, an extra agent costs a context and a brief, and a
 claim is checked by someone other than its author.

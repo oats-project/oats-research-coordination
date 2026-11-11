@@ -1,5 +1,63 @@
 # Changelog
 
+## template-v2.1.0 - 2026-11-11
+
+A minor release, following engineering's template-v3.1.0: the lead's texts say that it
+leads the whole effort and how it delegates. Now: the lead leads and decides who does each
+piece; its own briefing carries the test for what an effort is; a researcher reads an angle
+and the verifier checks claims, and any other task that needs knowledge or judgment goes to
+an expert; a standing specialist stays for the effort; and exploration is a task once it
+has bounds. The rule that a question with several angles always goes to researchers is
+unchanged. For a copy of template-v2.0.1, port the passages below.
+
+**`oats.research-lead`**
+- inject, changed: the heading and opening paragraph ("you lead one question"; leading is
+  not doing it all yourself). Port: both.
+- inject, changed: the helpers bullet ("every task you give one is closed"; each task
+  carries its bounds, what "answered" or "done" means and what to send back). Port: the
+  bullet.
+- inject, added: two bullets after it, "choose a helper's soul by what the task needs" and
+  "keep a standing specialist". Port: both.
+- inject, changed: the bullet on another area's work now opens with what an effort is ("know
+  where your effort ends"). Port: the bullet.
+- inject, added: "Sent as a helper" ends with the standing specialist's side: it hands each
+  task back, stays between tasks, and sends its done line only when its parent says its area
+  is done. Port: from "A standing specialist (your first brief" to the end of the paragraph.
+- `/plan-the-angles`, changed: "Who researches each angle" opens with both costs, a
+  researcher's and researching it yourself, and says neither is the default. Port: that
+  paragraph.
+- `/send-a-helper`, changed: the description and the opening (every task closed; most
+  helpers stay for one task, a standing specialist for the effort; "an effort too large for
+  one context" under splitting context). Port: both.
+- `/send-a-helper`, changed: "A closed question, or it isn't a probe yet" ends with
+  "Exploration with bounds is a closed task too" and its four parts. Port: from that
+  heading's last paragraph to the end of the section.
+- `/send-a-helper`, added: "For how long" under "Specialisation", and the section "A
+  standing specialist" with its `adapt` marker (how many a lead may keep). Port: both.
+- `/send-a-helper`, changed: "What it is worth" names the probe cap; "Who does it" chooses
+  the soul by what the task needs. Port: that sentence, and from "Choose the soul by what
+  the task needs" to the paragraph that ends "it goes to an expert."
+- `/send-a-helper`, changed: "The brief" (it reports once for the task; a standing
+  specialist's first brief) and "Its answer" (when a standing specialist is retired). Port:
+  the last bullet of "The brief" with the paragraph after it, and the done-line bullet.
+- `/send-a-helper` and `/land-on-agreement`: the last line names engineering's
+  template-v3.1.0. `/land-on-agreement`, changed: "Retire what's finished" says when a
+  standing specialist is retired. Port: the helpers bullet and the last line of each.
+
+**`oats.landing-rules`**
+- inject, changed: the helpers sentence ("every task one gets is closed: it reports once for
+  the task and retires, a standing specialist only when its area is done"). Port: that
+  sentence.
+
+**`oats.dispatcher`**
+- inject and `/dispatch`, changed: "One effort, one lead, from start to done", not "one
+  instance"; the lead brings in its own researchers, verifier and helpers. Port: that
+  sentence in each.
+
+**The repository**
+- `README.md` and `ADAPTING.md` (principle 2 and the markers): the lead leads one question,
+  every task it gives a helper is closed, and a standing specialist stays for the effort.
+
 ## template-v2.0.1 - 2026-11-11
 
 A patch release for oats.okf 6.0, and the lead's shared skills follow engineering's
