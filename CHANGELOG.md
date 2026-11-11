@@ -24,12 +24,12 @@ proposing. A copy whose knowledge layer is not oats.okf words the lines as its l
 **`oats.research-lead`**
 - `/land-on-agreement`, "Retire what's finished", changed: the knowledge condition is the
   final knowledge checkpoint, run and its outcome recorded as the knowledge layer says, and
-  a proposal it opens there is in the knowledge layer's hands, not one of the PRs that must
-  land, so nobody waits for it; the done report says that checkpoint's outcome in one of
-  four lines, three of them finished and "done, proposal pending: <slug and why>" not
-  finished (retire nothing yet; it reports again with one of the three); and a retired
-  one's name is never reused because the records it left and the provenance of the
-  knowledge it proposed still name it. Port: those three bullets.
+  a proposal it opened at any knowledge checkpoint is in the knowledge layer's hands, not
+  one of the PRs that must land, so nobody waits for it; the done report says that
+  checkpoint's outcome in one of four lines, three of them finished and "done, proposal
+  pending: <slug and why>" not finished (retire nothing yet; it reports again with one of
+  the three); and a retired one's name is never reused because the records it left and the
+  provenance of the knowledge it proposed still name it. Port: those three bullets.
 
 ### The shared skills follow engineering's template-v3.0.2
 
