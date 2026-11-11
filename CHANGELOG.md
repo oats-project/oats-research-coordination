@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## template-v2.0.1 - 2026-11-11
 
 A patch release for oats.okf 6.0, and the lead's shared skills follow engineering's
 template-v3.0.2.
