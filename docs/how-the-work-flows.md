@@ -60,7 +60,7 @@ before next quarter's plan."
 8. **What is worth keeping.** The lead writes three findings into the knowledge layer, one
    entry each: the finding as narrow as the report states it, its source and date, its
    check, and the effort and accepted revision it came from.
-9. **Done.** The lead closes the effort's record, runs its final harvest checkpoint, sends
+9. **Done.** The lead closes the effort's record, runs its final knowledge checkpoint, sends
    the person one done note in the effort's thread, and retires itself.
 
 ## A small question
