@@ -17,7 +17,7 @@ before next quarter's plan."
    "pricing-lead leads this; from now on talk to it in the effort's thread." It carries
    nothing further. Every instance is named this way, `<task>-<role>`: the task first, and
    last the role it plays in the effort (lead, researcher, verifier, helper, specialist,
-   dispatcher), never its soul, which the sidebar already shows.
+   dispatcher), never its soul, which the sidebar already shows, in five words at most.
 2. **The lead frames the question** (`/frame-the-question`). It reads its soul's knowledge
    and last year's report first, then sends the person its frame in one plain question:
    the decision (keep seat pricing, or move next quarter), what would change it (churn on

@@ -1,10 +1,10 @@
 {
   "capability": "oats.verifier",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "compatibility": {
     "oats": ">=0.69.7"
   },
-  "description": "The verifier's role and method: briefed to disprove, it takes the claims one report leans on at one revision, reads their sources independently, tries to break each one, and gives a verdict per claim (holds, weak or wrong) with its evidence and what it checked, once, to the lead that started it; then retires. It runs on a different model from the researchers and the lead wherever the organisation has one. Assigned to the verifier soul. Copied from the research template, template-v2.1.1.",
+  "description": "The verifier's role and method: briefed to disprove, it takes the claims one report leans on at one revision, reads their sources independently, tries to break each one, and gives a verdict per claim (holds, weak or wrong) with its evidence and what it checked, once, to the lead that started it; then retires. It runs on a different model from the researchers and the lead wherever the organisation has one. Assigned to the verifier soul. Copied from the research template, template-v2.1.2.",
   "requires": [],
   "inject": "injects/verifier.md",
   "skills": [

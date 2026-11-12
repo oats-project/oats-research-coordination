@@ -53,6 +53,20 @@ its own claims, an angle it researched itself included, and no researcher checks
 Why: one agent holds the whole question, an extra agent costs a context and a brief, and a
 claim is checked by someone other than its author.
 
+**The models children run on.**
+<!-- adapt: Which is the weakest model tier a child may run on, in each model family the organisation launches? -->
+No agent runs a child, an OATS child or a native subagent, on a weaker model tier than its
+own, in its family or another: never a smaller, faster or cheaper model, to save cost or
+time. That is the floor, and it comes before model diversity: a child that checks work
+runs on another family's model only where one at or above the floor is available;
+otherwise on the parent's own model, and the parent says that diversity was lost. A model
+whose tier the parent can't establish is below the floor. The floor binds the model a child
+would actually launch on, wherever it comes from: a soul's default or a machine's override
+that is below it is not used. The parent spawns that child on a model at or above the
+floor instead, its own by default, and tells its person once that the configuration is
+below the floor, naming the soul and the machine. Why: a child's answer is used as its
+parent's own would be, and a weaker model fails without saying so.
+
 **Sources.**
 <!-- adapt: Which sources may researchers and the verifier use? -->
 Public, freely available sources, and the organisation's own records that the lead's brief
