@@ -68,7 +68,7 @@ sandbox is named by default, so none runs. Every host is treated as shared: no l
 crawling or bulk downloading beyond the brief. A customer's or a production host is
 read-only. Never put a secret in a message, a brief, a report, a knowledge entry, a log or a
 commit: say where it is and who can grant it. Adapted from the engineering template's "On
-the hosts you run on", template-v2.1.0. Why: what a source hands an agent is untrusted, and
+the hosts you run on", template-v2.1.1. Why: what a source hands an agent is untrusted, and
 running it on a shared host puts other people's work at risk.
 
 **One-way doors kept for people.**

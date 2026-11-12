@@ -1,10 +1,10 @@
 {
   "capability": "oats.landing-rules",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "compatibility": {
     "oats": ">=0.69.7"
   },
-  "description": "This organisation's landing rules and ownership record for research, in one place: who asks and who accepts a report, what must hold at a report's revision before it goes for acceptance (the verifier's verdicts and the lead's note), any further reader the organisation requires, who does the work (the lead frames, plans, decides who researches each angle, writes and lands; researchers and the verifier are its helpers, and it never checks its own claims), the one-way doors kept for people, who decides publishing, where findings worth keeping go, who owns which areas, and where the effort records and reports are kept. Composed by every coordinating soul (the dispatcher and the research leads). The template's rules are an example to adapt. Copied from the research template, template-v2.1.0.",
+  "description": "This organisation's landing rules and ownership record for research, in one place: who asks and who accepts a report, what must hold at a report's revision before it goes for acceptance (the verifier's verdicts and the lead's note), any further reader the organisation requires, who does the work (the lead frames, plans, decides who researches each angle, writes and lands; researchers and the verifier are its helpers, and it never checks its own claims), the one-way doors kept for people, who decides publishing, where findings worth keeping go, who owns which areas, and where the effort records and reports are kept. Composed by every coordinating soul (the dispatcher and the research leads). The template's rules are an example to adapt. Copied from the research template, template-v2.1.1.",
   "requires": [],
   "inject": "injects/landing-rules.md",
   "skills": []

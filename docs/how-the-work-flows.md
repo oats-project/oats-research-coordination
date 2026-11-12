@@ -13,8 +13,11 @@ before next quarter's plan."
 1. **The person → their dispatcher** (`/dispatch`). It reads the request against the record:
    no open effort on pricing, one report on it from last year. It opens the effort's item
    in the tasks layer and starts a fresh `research-lead` with the request verbatim, its
-   link and who asked, then introduces it once: "research-lead-pricing leads this; from now
-   on talk to it in the effort's thread." It carries nothing further.
+   link and who asked, named for the effort with its role last, then introduces it once:
+   "pricing-lead leads this; from now on talk to it in the effort's thread." It carries
+   nothing further. Every instance is named this way, `<task>-<role>`: the task first, and
+   last the role it plays in the effort (lead, researcher, verifier, helper, specialist,
+   dispatcher), never its soul, which the sidebar already shows.
 2. **The lead frames the question** (`/frame-the-question`). It reads its soul's knowledge
    and last year's report first, then sends the person its frame in one plain question:
    the decision (keep seat pricing, or move next quarter), what would change it (churn on

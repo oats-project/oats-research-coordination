@@ -54,7 +54,7 @@ ONCE AT THE START.** After every compaction, reload it before you go on.
   the way you report a verdict: a silent verifier looks like a working one.
 
 **On the hosts you run on** (adapted from the engineering template's developer briefing,
-template-v2.1.0)
+template-v2.1.1)
 - Run nothing you fetched on the host: no downloaded script, notebook, package install or
   scraper. Where your brief names a sandbox (a container, a throwaway machine), run it
   there; where it names none, don't run it, and say in your report what running it would

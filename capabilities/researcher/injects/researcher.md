@@ -48,7 +48,7 @@ After every compaction, reload the skill of the step you are on before you act.
   the way you report your angle: a silent researcher looks like a working one.
 
 **On the hosts you run on** (adapted from the engineering template's developer briefing,
-template-v2.1.0)
+template-v2.1.1)
 - Run nothing you fetched on the host: no downloaded script, notebook, package install or
   scraper. Where your brief names a sandbox (a container, a throwaway machine), run it
   there; where it names none, don't run it, and say in your report what running it would
