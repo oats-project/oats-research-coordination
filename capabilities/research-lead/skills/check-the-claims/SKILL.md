@@ -24,9 +24,11 @@ Different from every researcher's and from yours, where the organisation has one
 effective one and say so in the report's limits.
 
 ## 3. Send it
-The verifier is your child, the brief its task, with a name no instance has had:
+The verifier is your child, the brief its task, named for what it checks with its role
+last (`pricing-claims-verifier`), a name no instance has had (a later check of the same
+claims names its round, `pricing-claims-r2-verifier`):
 ```bash
-oats spawn verifier --parent "$OATS_INSTANCE" --same-work --purpose <check-slug> --task-file <claims.md>
+oats spawn verifier --parent "$OATS_INSTANCE" --same-work --name <check-slug>-verifier --task-file <claims.md>
 ```
 Add `--harness <h> --model <m>` (or a launch configuration) only where step 2 needs another
 model than the effective one. The brief holds exactly:

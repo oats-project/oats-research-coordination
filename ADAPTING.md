@@ -142,7 +142,7 @@ A copy is adapted when no marker is left; until then, the markers left are its o
 
 Every copied capability records the template release it came from, in its `oats.json`
 description. The template's descriptions already end with that sentence:
-"Copied from the research template, template-v2.1.0." Keep it as it is when you copy, and
+"Copied from the research template, template-v2.1.1." Keep it as it is when you copy, and
 set `version` to the copy's own numbering from then on. The template's own validator,
 which requires `version` to be the template release, stays with the template (section 1):
 nothing in the copy checks it. The dispatcher's description, and the shared skills of
@@ -153,7 +153,7 @@ Souls carry no such record, so write one for the whole copy, in the host reposit
 `capabilities/TEMPLATE-RELEASE` (a plain file, which OATS ignores):
 ```
 template: oats-project/oats-research-coordination
-release: template-v2.1.0
+release: template-v2.1.1
 commit: <the full commit SHA that tag points to>
 capabilities: <the ids you copied>
 souls: <the souls you copied, under their names in the copy>
@@ -167,7 +167,7 @@ template, separated by a blank line.
 
 An organisation whose groups use both templates keeps one dispatcher and one set of
 landing rules:
-- **`oats.dispatcher`:** this template's is engineering's at template-v3.1.0, changed only
+- **`oats.dispatcher`:** this template's is engineering's at template-v3.1.2, changed only
   where it names the lead's children.
   Keep the copy already in the workspace (take up the newer engineering release in it if
   yours is older), and add `research-lead` and the area it covers to each dispatcher

@@ -32,8 +32,8 @@ these claims), then resolve it:
        churn on switching for products like yours, and that question deserves research of
        its own: its lead is your sibling.
        ```bash
-       oats spawn <soul> --relation sibling --relative-to "$OATS_INSTANCE" --purpose <slug> \
-         --task-file <message.md>
+       oats spawn <soul> --relation sibling --relative-to "$OATS_INSTANCE" \
+         --name <effort-slug>-lead --task-file <message.md>
        ```
        The two show together in your person's status and sidebar, and it outlives your
        retirement, which a child would not. A sibling records no parent, so it takes no
@@ -43,8 +43,8 @@ these claims), then resolve it:
        parent starting it. With a parent, tell it about the second effort instead.
      - **Unrelated:** a finding with nothing to do with your effort's subject. Say the
        same effort notices that a report in the knowledge layer cites a withdrawn dataset:
-       its owner is independent of you, `oats spawn <soul> --relation unrelated --purpose
-       <slug> --task-file <message.md>`.
+       its owner is independent of you, `oats spawn <soul> --relation unrelated --name
+       <effort-slug>-lead --task-file <message.md>`.
 
      Either way your message is its task, and the new effort gets its own record, linked
      from yours and back. Tell your person at once, in your effort's thread, in one
@@ -53,8 +53,11 @@ these claims), then resolve it:
    - a role in another person's area: ask that person's dispatcher to start it, with your
      message as the request it reads by its id (`/across-people`); where they have none,
      ask them.
-3. **Its name.** Give each new instance a name no instance has had. Never reuse a retired
-   instance's name.
+3. **Its name.** `<task>-<role>`: the task first, and last the role it plays in the
+   coordination (lead, researcher, verifier, helper, specialist, dispatcher), never its
+   soul, which the sidebar already shows (`churn-study-lead`). Give each new instance a
+   name no instance has had, never a retired one's: when the name is taken, make the task's
+   part more specific.
 
 ## The message
 One message, in the effort's thread with that role:
@@ -84,5 +87,5 @@ default.
 Answer in the same thread, at the reference you were given. If it moved under you, say so
 and answer at the new one.
 
-Taken from the engineering template's engineering-expert, template-v3.0.2; changed where it
+Taken from the engineering template's engineering-expert, template-v3.1.2; changed where it
 named a pull request, a developer or a maintainer.

@@ -32,7 +32,7 @@ person or several. The template's roles:
 
 - **Dispatcher,** for each person who wants a front door. It reads a request against the
   record, starts a fresh lead for it, introduces that lead once and steps aside. It never
-  relays. It is engineering's, at template-v3.1.0, changed only where it names the lead's
+  relays. It is engineering's, at template-v3.1.2, changed only where it names the lead's
   children.
 - **Research lead,** one soul per way of working that plainly differs, plus a generalist.
   Its instance frames the question with the person who asked, plans the angles, researches
@@ -69,14 +69,14 @@ around it, and the evidence the design rests on.
 
 - **`capabilities/`:** five working capabilities, each an inject (the always-on briefing)
   plus the skills an agent loads when it needs them.
-  - `oats.dispatcher`: `/dispatch`. Taken from the engineering template, template-v3.1.0,
+  - `oats.dispatcher`: `/dispatch`. Taken from the engineering template, template-v3.1.2,
     and changed only where it names the lead's children.
   - `oats.research-lead`: `/frame-the-question`, `/plan-the-angles`, `/send-a-helper`,
     `/check-the-claims`, `/write-the-report`, `/land-the-report`, `/hand-off`,
     `/ask-a-person`, `/land-on-agreement`, `/across-people`, `/findings-and-blocks`. The
     last five and `/send-a-helper` are the lead's shared skills, taken from the engineering
-    template's expert (`/send-a-helper` and `/land-on-agreement` at template-v3.1.0, the
-    others at template-v3.0.2) and changed where they named a pull request, a developer or
+    template's expert (`/send-a-helper` and `/hand-off` at template-v3.1.2,
+    `/land-on-agreement` at template-v3.1.0, the others at template-v3.0.2) and changed where they named a pull request, a developer or
     a maintainer ([CHANGELOG.md](CHANGELOG.md) lists each change).
   - `oats.researcher`: `/research-an-angle`, `/report-the-angle`.
   - `oats.verifier`: `/disprove-the-claims`.
@@ -101,10 +101,11 @@ Every place where the template assumes something about an organisation carries o
 2. **Sync and start:** `oats sync`, then a dispatcher for each person who wants one, with
    who they are as its task:
    ```bash
-   oats spawn dispatcher --name dispatcher-<person> --task-file <brief.md>
+   oats spawn dispatcher --name <person>-dispatcher --task-file <brief.md>
    ```
-   Bring it your questions, or start a lead directly: `oats spawn research-lead --task
-   "<question>"`.
+   Bring it your questions, or start a lead directly, named for the effort with its role
+   last: `oats spawn research-lead --name <effort-slug>-lead --task "<question>"`. A name
+   is used once: after a retired instance had it, make the effort's part more specific.
 
 A messaging capability (for example `oats.aweb`) is strongly recommended: hand-offs are
 messages that wake their recipient. Without one, reports land in session transcripts.

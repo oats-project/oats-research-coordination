@@ -1,5 +1,32 @@
 # Changelog
 
+## template-v2.1.1 - 2026-11-12
+
+A patch release, following engineering's template-v3.1.2: instance names. Spawn commands
+used `--purpose`, which names an instance `<soul>-<purpose>`: the soul first, which the
+sidebar already shows, and the task last. Every spawn command now gives an exact `--name`,
+`<task>-<role>`: the task first, and last the role the instance plays in the effort, never
+its soul. For a copy of template-v2.1.0, port the passages below.
+
+**`oats.dispatcher`**
+- `/dispatch`, changed: the lead is `--name <effort-slug>-lead`, with the sentences after
+  the command. Port: the command and those sentences.
+
+**`oats.research-lead`**
+- `/plan-the-angles`, changed: a researcher is `--name <angle-slug>-researcher`. Port: the
+  command and the sentence before it.
+- `/check-the-claims`, changed: the verifier is `--name <check-slug>-verifier`. Port: the
+  command and the sentence before it.
+- `/send-a-helper`, changed: `--name <task-slug>-helper`, or `<area-slug>-specialist` for a
+  standing specialist. Port: the paragraph before the command, and the command.
+- `/hand-off`, changed: a new lead, sibling or independent, is `--name <effort-slug>-lead`.
+  Port: both commands, and step 3, "Its name", which now states the rule.
+
+**Docs**
+- `README.md`: the dispatcher is `<person>-dispatcher`, and a lead started directly is
+  `--name <effort-slug>-lead`. `docs/how-the-work-flows.md`: the
+  walkthrough's lead is `pricing-lead`, with the naming rule in step 1.
+
 ## template-v2.1.0 - 2026-11-11
 
 A minor release, following engineering's template-v3.1.0: the lead's texts say that it
