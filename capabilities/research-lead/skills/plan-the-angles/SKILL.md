@@ -80,6 +80,11 @@ others', the models and not the harnesses, an unknown model counted as a match. 
 child's model in your instance state: the verifier's pick needs them. With one family only,
 say so in the report's limits.
 
+**The floor comes first.** Every researcher and the verifier run at or above the floor your
+landing rules set ("The models children run on"), as `/send-a-helper` says: check the model
+each would launch on, the effective one included, before you vary families. A family with
+no model at or above the floor is not one to vary across.
+
 ## 5. Send them
 One researcher per angle that step 3 gives one, in parallel, each your child, its brief as
 its task, named for its angle with its role last (`churn-data-researcher`), a name no

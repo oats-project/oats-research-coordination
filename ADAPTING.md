@@ -118,6 +118,7 @@ marker; then remove the marker. Where the organisation has no answer yet:
 A copy is adapted when no marker is left; until then, the markers left are its open points.
 
 ### `capabilities/landing-rules/injects/landing-rules.md`
+- **Which is the weakest model tier a child may run on, in each model family the organisation launches?** Assumes the spawning agent's own tier: a child, an OATS child or a native subagent, never runs on a smaller, faster or cheaper model than its parent's, in the parent's family or another. The lead's inject, `/send-a-helper` and `/plan-the-angles` point at this rule; researchers and the verifier spawn nothing. Name the floor for each family the organisation launches (a tier, say, not a version, so it outlives a release). Default: as written.
 - **Who may ask for research, and who accepts a report as the answer?** Assumes anyone in the organisation may ask, and the person who asked accepts. Where someone else accepts (the owner of the decision the report serves, a committee), name them: the texts frame the question with them too, and send the report to whoever this rule names. Default: the assumption.
 - **What must hold at a report's revision before it goes for acceptance?** Assumes the verifier's verdict on each claim the report leans on, each weak one narrowed or shown as weak, each wrong one corrected or dropped, each disputed verdict settled by a fresh verifier or shown as disputed, and the lead's note `CHECKED at <revision>`. An organisation may add a check (a second verifier for reports headed outside it, say); it never removes the verifier. Default: the assumption.
 - **Does any report need a reader beyond the verifier and the person who accepts it before it lands?** Assumes none. Where the organisation already requires one (a maintainer of an area, a reviewer for reports headed outside it), name it and when it reads; the lead hands it the checked revision before acceptance. This is where a copy adds a maintainer. Default: none.
@@ -142,7 +143,7 @@ A copy is adapted when no marker is left; until then, the markers left are its o
 
 Every copied capability records the template release it came from, in its `oats.json`
 description. The template's descriptions already end with that sentence:
-"Copied from the research template, template-v2.1.1." Keep it as it is when you copy, and
+"Copied from the research template, template-v2.1.2." Keep it as it is when you copy, and
 set `version` to the copy's own numbering from then on. The template's own validator,
 which requires `version` to be the template release, stays with the template (section 1):
 nothing in the copy checks it. The dispatcher's description, and the shared skills of
@@ -153,7 +154,7 @@ Souls carry no such record, so write one for the whole copy, in the host reposit
 `capabilities/TEMPLATE-RELEASE` (a plain file, which OATS ignores):
 ```
 template: oats-project/oats-research-coordination
-release: template-v2.1.1
+release: template-v2.1.2
 commit: <the full commit SHA that tag points to>
 capabilities: <the ids you copied>
 souls: <the souls you copied, under their names in the copy>
