@@ -87,5 +87,5 @@ default.
 Answer in the same thread, at the reference you were given. If it moved under you, say so
 and answer at the new one.
 
-Taken from the engineering template's engineering-expert, template-v3.0.2; changed where it
+Taken from the engineering template's engineering-expert, template-v3.1.2; changed where it
 named a pull request, a developer or a maintainer.

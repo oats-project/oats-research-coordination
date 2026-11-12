@@ -167,7 +167,7 @@ template, separated by a blank line.
 
 An organisation whose groups use both templates keeps one dispatcher and one set of
 landing rules:
-- **`oats.dispatcher`:** this template's is engineering's at template-v3.1.0, changed only
+- **`oats.dispatcher`:** this template's is engineering's at template-v3.1.2, changed only
   where it names the lead's children.
   Keep the copy already in the workspace (take up the newer engineering release in it if
   yours is older), and add `research-lead` and the area it covers to each dispatcher
