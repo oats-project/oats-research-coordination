@@ -23,7 +23,8 @@ its soul. For a copy of template-v2.1.0, port the passages below.
   Port: both commands, and step 3, "Its name", which now states the rule.
 
 **Docs**
-- `README.md`: the dispatcher is `<person>-dispatcher`. `docs/how-the-work-flows.md`: the
+- `README.md`: the dispatcher is `<person>-dispatcher`, and a lead started directly is
+  `--name <effort-slug>-lead`. `docs/how-the-work-flows.md`: the
   walkthrough's lead is `pricing-lead`, with the naming rule in step 1.
 
 ## template-v2.1.0 - 2026-11-11

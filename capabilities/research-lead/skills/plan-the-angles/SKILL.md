@@ -83,7 +83,8 @@ say so in the report's limits.
 ## 5. Send them
 One researcher per angle that step 3 gives one, in parallel, each your child, its brief as
 its task, named for its angle with its role last (`churn-data-researcher`), a name no
-instance has had:
+instance has had (a second round on the same angle names its round,
+`churn-data-r2-researcher`):
 ```bash
 oats spawn researcher --parent "$OATS_INSTANCE" --same-work --name <angle-slug>-researcher --task-file <angle.md>
 ```

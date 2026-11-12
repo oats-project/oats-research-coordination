@@ -25,7 +25,8 @@ effective one and say so in the report's limits.
 
 ## 3. Send it
 The verifier is your child, the brief its task, named for what it checks with its role
-last (`pricing-claims-verifier`), a name no instance has had:
+last (`pricing-claims-verifier`), a name no instance has had (a later check of the same
+claims names its round, `pricing-claims-r2-verifier`):
 ```bash
 oats spawn verifier --parent "$OATS_INSTANCE" --same-work --name <check-slug>-verifier --task-file <claims.md>
 ```

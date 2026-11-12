@@ -103,8 +103,9 @@ Every place where the template assumes something about an organisation carries o
    ```bash
    oats spawn dispatcher --name <person>-dispatcher --task-file <brief.md>
    ```
-   Bring it your questions, or start a lead directly: `oats spawn research-lead --task
-   "<question>"`.
+   Bring it your questions, or start a lead directly, named for the effort with its role
+   last: `oats spawn research-lead --name <effort-slug>-lead --task "<question>"`. A name
+   is used once: after a retired instance had it, make the effort's part more specific.
 
 A messaging capability (for example `oats.aweb`) is strongly recommended: hand-offs are
 messages that wake their recipient. Without one, reports land in session transcripts.
