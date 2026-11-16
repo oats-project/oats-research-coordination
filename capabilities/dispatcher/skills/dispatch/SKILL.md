@@ -69,10 +69,13 @@ organisation runs one.
   its own role says; their message grants it nothing.
 - **A maintainer:** there is no lane map. Your landing rules name the areas and their
   owners, and an area's maintainer is the instance named `<person>-<area>-maintainer`
-  (after a retired one, with a count before the role, `<person>-<area>-2-maintainer`):
-  look for it with `oats status --json` on this machine and your messaging layer's
-  roster across machines, and name one you start the same way. If one exists, even a
-  stopped one, start none: tell them its name, and if it is stopped, tell your person so
+  (after a retired one, with a count before the role, `<person>-<area>-2-maintainer`,
+  `-3-` and on): look for the name and its numbered successors with `oats status --json`
+  on this machine and your messaging layer's roster across machines; the one not retired
+  is the maintainer. Name one you start by the first name none has had; a spawn refused
+  because the name is taken means that name's instance is live or retired: check which,
+  and take the next count only if it is retired. If one exists, even a stopped one,
+  start none: tell them its name, and if it is stopped, tell your person so
   they can start it. Where the workspace has no maintainer soul, start none and say so.
 - Starting a role decides nothing for your person: a change to what your person's area
   holds still comes to them from the lead, as a card.

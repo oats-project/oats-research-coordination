@@ -60,9 +60,12 @@ takes this release up whole (ADAPTING.md, section 6).
   gets a fresh verifier; a revision that changes no claim carries them once the lead has
   read its delta), and a claim taken unchanged from a specialist's checked findings keeps
   its verdict; a conclusion the lead draws across areas, or from several carried claims
-  together, is a new claim and goes to a fresh verifier. A `VERIFIED` note and a green light are given again at any new revision.
+  together, is a new claim and goes to a fresh verifier. A `VERIFIED` note and a green
+  light are given again at any new revision.
 - **No lane map.** An area's maintainer, where the organisation runs one, is found by its
-  instance name, `<person>-<area>-maintainer`, and a taken name stops a second one.
+  instance name, `<person>-<area>-maintainer`, or after a retired one by its numbered
+  successor (`<person>-<area>-2-maintainer`): the one not retired is the maintainer, and
+  a live one stops a second.
 - **Every finished instance retires itself,** children first, with `oats retire <name>
   --self`, and its parent sweeps: it checks that the child is gone on its last message,
   before any step that needs it gone and at every checkpoint wake. Before, a parent

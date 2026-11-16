@@ -19,8 +19,7 @@ doesn't rest on needs no verifier, but the report says which claims were not che
 ## 2. The verifier's model
 Different from every researcher's and from yours, where the organisation has one
 (`/plan-the-angles`, "Pick the models"), at or above the floor. If you can't establish a
-difference, use the effective one where it meets the floor, and say so in the report's
-limits.
+difference, use your own model, and say that diversity was lost in the report's limits.
 
 ## 3. Send it
 The verifier is your child, the brief its task, named for what it checks with its role

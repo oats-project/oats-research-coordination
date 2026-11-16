@@ -56,8 +56,9 @@ before next quarter's plan."
    searched for. Four hold, one is weak
    (the source measured self-serve plans only, and the claim dropped that), one is wrong
    (its figure came from another table). The lead narrows the weak one, corrects the wrong
-   one, and follows what it changes: one conclusion softens. Both changed claims go to a
-   fresh verifier at the new revision, never the first: both hold. Each verifier retires
+   one, and follows what it changes: one conclusion softens. All changed claims, including
+   the softened conclusion, go to a fresh verifier at the new revision, never the first:
+   all hold. Each verifier retires
    itself once its verdicts are sent; the lead writes `CHECKED at <revision>`.
 7. **The person accepts it** (`/land-on-agreement`). The lead hands the
    person the report at its checked revision, in the effort's thread: the answer in three
