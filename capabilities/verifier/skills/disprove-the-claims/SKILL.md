@@ -65,6 +65,5 @@ named there too, with why.
 - Check the claims at the revision in your brief, not a later one: a fresh verifier checks
   the next.
 - Hold the bar the evidence sets, not a bar of your own.
-- If the lead disputes a verdict with you, re-read it against its reason. Withdraw it if
-  they're right; say why if they aren't. Either way, a dispute that stands goes to a fresh
-  verifier, not back and forth with you.
+- Your report is your one answer: a verdict the lead disputes goes to a fresh verifier,
+  never back and forth with you.

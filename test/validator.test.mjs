@@ -32,7 +32,7 @@ function mutate(t, relativePath, fn) {
 test("validator accepts the real template", () => {
   const result = runValidator();
   assert.equal(result.status, 0, result.stderr);
-  assert.match(result.stdout, /^Validated the research template at template-v2\.1\.2: 5 capabilities, 15 skills, 4 souls, 16 adapt markers/);
+  assert.match(result.stdout, /^Validated the research template at template-v3\.0\.0: 5 capabilities, 13 skills, 4 souls, 15 adapt markers/);
 });
 
 test("validator rejects capability manifest schema violations", (t) => {
@@ -74,7 +74,7 @@ test("validator rejects unknown slash skill references", (t) => {
 });
 
 test("validator rejects a reference to an engineering skill this template doesn't carry", (t) => {
-  const result = mutate(t, "capabilities/research-lead/skills/hand-off/SKILL.md", (text) => `${text}\nSee \`/coordinate-developers\`.\n`);
+  const result = mutate(t, "capabilities/research-lead/skills/hand-off-and-ask/SKILL.md", (text) => `${text}\nSee \`/coordinate-developers\`.\n`);
   assert.equal(result.status, 1);
   assert.match(result.stderr, /\/coordinate-developers names no skill of this template/);
 });
@@ -164,15 +164,15 @@ test("validator rejects an adapt marker outside a capability", (t) => {
 });
 
 test("validator rejects a capability that doesn't record its template release", (t) => {
-  const result = mutate(t, "capabilities/researcher/oats.json", (text) => text.replace(" Copied from the research template, template-v2.1.2.", ""));
+  const result = mutate(t, "capabilities/researcher/oats.json", (text) => text.replace(" Copied from the research template, template-v3.0.0.", ""));
   assert.equal(result.status, 1);
-  assert.match(result.stderr, /capabilities\/researcher\/oats\.json\.description: must end with "Copied from the research template, template-v2\.1\.2\."/);
+  assert.match(result.stderr, /capabilities\/researcher\/oats\.json\.description: must end with "Copied from the research template, template-v3\.0\.0\."/);
 });
 
 test("validator rejects a capability whose version isn't the template release", (t) => {
-  const result = mutate(t, "capabilities/researcher/oats.json", (text) => text.replace('"version": "2.1.2"', '"version": "2.2.0"'));
+  const result = mutate(t, "capabilities/researcher/oats.json", (text) => text.replace('"version": "3.0.0"', '"version": "2.2.0"'));
   assert.equal(result.status, 1);
-  assert.match(result.stderr, /capabilities\/researcher\/oats\.json\.version: must be the template release 2\.1\.2/);
+  assert.match(result.stderr, /capabilities\/researcher\/oats\.json\.version: must be the template release 3\.0\.0/);
 });
 
 test("validator rejects a soul composing a capability the template lacks", (t) => {
@@ -221,20 +221,20 @@ test("validator rejects a skill reference a composing soul can't load", (t) => {
 });
 
 test("validator rejects a forge CLI command in a skill", (t) => {
-  const result = mutate(t, "capabilities/research-lead/skills/land-the-report/SKILL.md", (text) => `${text}\nRun \`gh pr merge 1\`.\n`);
+  const result = mutate(t, "capabilities/research-lead/skills/land-on-agreement/SKILL.md", (text) => `${text}\nRun \`gh pr merge 1\`.\n`);
   assert.equal(result.status, 1);
-  assert.match(result.stderr, /land-the-report\/SKILL\.md:\d+: commands the GitHub CLI/);
+  assert.match(result.stderr, /land-on-agreement\/SKILL\.md:\d+: commands the GitHub CLI/);
 });
 
 test("validator reads a skill's references too", (t) => {
   const dir = fixture(t);
-  const references = join(dir, "capabilities/research-lead/skills/land-the-report/references");
+  const references = join(dir, "capabilities/research-lead/skills/land-on-agreement/references");
   mkdirSync(references, { recursive: true });
-  writeFileSync(join(references, "publishing.md"), "Publish it with `gh release create`, then load `/land-your-prs`.\n");
+  writeFileSync(join(references, "extra.md"), "Publish it with `gh release create`, then load `/land-your-prs`.\n");
   const result = runValidator(dir);
   assert.equal(result.status, 1);
-  assert.match(result.stderr, /publishing\.md: skill reference \/land-your-prs names no skill of this template/);
-  assert.match(result.stderr, /publishing\.md:\d+: commands the GitHub CLI/);
+  assert.match(result.stderr, /extra\.md: skill reference \/land-your-prs names no skill of this template/);
+  assert.match(result.stderr, /extra\.md:\d+: commands the GitHub CLI/);
 });
 
 test("validator rejects docs and souls naming a skill or soul the template lacks", (t) => {
@@ -266,9 +266,9 @@ test("validator rejects a skill directory its oats.json doesn't list", (t) => {
 });
 
 test("validator rejects a text that names a harness", (t) => {
-  const result = mutate(t, "capabilities/research-lead/skills/send-a-helper/SKILL.md", (text) => `${text}\nIn Codex, use its own subagents.\n`);
+  const result = mutate(t, "capabilities/research-lead/skills/orchestrate-agents/SKILL.md", (text) => `${text}\nIn Codex, use its own subagents.\n`);
   assert.equal(result.status, 1);
-  assert.match(result.stderr, /send-a-helper\/SKILL\.md:\d+: names a harness \(Codex\)/);
+  assert.match(result.stderr, /orchestrate-agents\/SKILL\.md:\d+: names a harness \(Codex\)/);
 });
 
 test("validator rejects a text that names a model", (t) => {

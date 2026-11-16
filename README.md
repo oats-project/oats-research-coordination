@@ -12,41 +12,51 @@ oats-project/oats-scientific-research-coordination.
 
 ## The way of working
 
-**The design never splits a problem; it splits responsibility and context.** One lead leads
-each question from framing to an accepted report, on a fresh instance. An extra agent earns
-its place by splitting context, testing, specialisation or parallel work; each is a helper
-whose every task is closed, an OATS instance the person can see, and one that checks work
-runs on a different model. A helper the effort keeps needing in one area stays for the
-effort, as a standing specialist. The lead decides who researches each angle: itself for a single
-small angle, researchers where one protects its context, reads in parallel or specialises,
-and a question with several angles always goes to researchers, one angle each, in
-parallel. A verifier, briefed to disprove, checks the claims the report leans on, the
-lead's own included: it is a role, not an option. Every
-hand-off is a message about a finished artefact at its exact reference. People give
-direction and decisions, as one card with a recommendation, with no deadline and no
-default if they are silent. A report lands when the person who asked (or whoever the landing
-rules name) accepts it as the answer.
+**The design never splits a problem; it splits responsibility and context.** One agent is
+the default: one lead owns each question from framing to an accepted report, on a fresh
+instance. Another agent earns its place by one of three reasons, named in its brief:
+protecting context, parallel work, or specialisation. The tree is sized to the work. A
+single small angle the lead reads itself. A question with several angles always goes to
+researchers, one per angle in parallel, with short-lived probes and helpers for what the
+plan rests on. A large question, or one across several areas, has one long-lived
+specialist per area, each leading its area's angles inside the lead's plan.
+
+Every lead-soul instance holds exactly one seat, named in the first line of its task: root
+lead, specialist, or helper or probe. A verifier, briefed to disprove, checks every claim
+the report leans on, the lead's own included: it is a role, not an option. Every hand-off
+is a message about a finished artefact at its exact reference. People give direction and
+decisions, as one card with a recommendation, with no deadline and no default if they are
+silent. A report lands when the person who asked (or whoever the landing rules name)
+accepts it as the answer. Every finished instance retires itself, and its parent checks
+that it is gone.
 
 It suits organisations whose agents research questions for people who must decide: one
 person or several. The template's roles:
 
 - **Dispatcher,** for each person who wants a front door. It reads a request against the
   record, starts a fresh lead for it, introduces that lead once and steps aside. It never
-  relays. It is engineering's, at template-v3.1.2, changed only where it names the lead's
-  children.
+  relays. It is engineering's, at template-v4.0.0, changed where it names the lead's
+  children, a pull request or a lane.
 - **Research lead,** one soul per way of working that plainly differs, plus a generalist.
-  Its instance frames the question with the person who asked, plans the angles, researches
-  a single small one itself or sends a researcher for each, has the load-bearing claims
-  checked, writes the report, lands it and retires. It never checks its own claims.
+  As an effort's root lead it frames the question with the person who asked, plans the
+  angles, sizes the tree, researches a single small angle itself or sends a researcher for
+  each, has the claims checked, writes the report, lands it and retires itself. It never
+  checks its own claims. The same soul serves as a specialist for one area of another
+  lead's question, and as a short-lived helper or probe.
 - **Researcher,** fresh for each angle: the lead's OATS child. It opens primary sources,
   quotes the figure each finding rests on, dates it, names the model generation of a
-  finding about agents, gives the strongest evidence against it, reports once and retires.
+  finding about agents, gives the strongest evidence against it, reports once and retires
+  itself.
 - **Verifier,** fresh for each check: the lead's OATS child, on a different model from the
   researchers and the lead wherever the organisation has one. Briefed to disprove, it reads
-  the sources independently and gives a verdict per claim: holds, weak or wrong.
+  the sources independently, gives a verdict per claim (holds, weak or wrong), reports
+  once and retires itself.
 
 There is no developer, maintainer or code reviewer. An organisation that wants a
-maintainer's read of its reports adds one at an adapt marker in the landing rules.
+maintainer's **green light** on an area's reports (a verdict on direction, scope,
+coherence and evidence, never a second check of the claims) chooses it at an adapt marker
+in the landing rules, and runs the engineering template's maintainer: it suits a large
+setup with parallel efforts in one area; a small or personal one leaves it out.
 
 ```
    person ──request──► dispatcher ──starts, introduces──► research lead
@@ -68,21 +78,20 @@ around it, and the evidence the design rests on.
 ## What's in it
 
 - **`capabilities/`:** five working capabilities, each an inject (the always-on briefing)
-  plus the skills an agent loads when it needs them.
-  - `oats.dispatcher`: `/dispatch`. Taken from the engineering template, template-v3.1.2,
-    and changed only where it names the lead's children.
-  - `oats.research-lead`: `/frame-the-question`, `/plan-the-angles`, `/send-a-helper`,
-    `/check-the-claims`, `/write-the-report`, `/land-the-report`, `/hand-off`,
-    `/ask-a-person`, `/land-on-agreement`, `/across-people`, `/findings-and-blocks`. The
-    last five and `/send-a-helper` are the lead's shared skills, taken from the engineering
-    template's expert (`/send-a-helper` and `/hand-off` at template-v3.1.3,
-    `/land-on-agreement` at template-v3.1.0, the others at template-v3.0.2) and changed where they named a pull request, a developer or
-    a maintainer ([CHANGELOG.md](CHANGELOG.md) lists each change).
+  plus the skills an agent opens when it reaches their moment.
+  - `oats.dispatcher`: `/dispatch`. Taken from the engineering template, template-v4.0.0.
+  - `oats.research-lead`: `/frame-the-question`, `/plan-the-angles`,
+    `/orchestrate-agents`, `/check-the-claims`, `/write-the-report`, `/hand-off-and-ask`,
+    `/land-on-agreement`. `/orchestrate-agents`, `/hand-off-and-ask` and
+    `/land-on-agreement` are the lead's shared texts, taken from the engineering
+    template's expert at template-v4.0.0 and changed where they named a pull request, a
+    developer, code or a lane ([CHANGELOG.md](CHANGELOG.md) lists each change).
   - `oats.researcher`: `/research-an-angle`, `/report-the-angle`.
   - `oats.verifier`: `/disprove-the-claims`.
-  - `oats.landing-rules`: the organisation's landing rules and ownership record, in one
-    small capability every coordinating soul composes: what lands a report, which acts a
-    person approves, and where records are kept. The template's rules are an example.
+  - `oats.landing-rules`: the organisation's landing rules, its ownership record and the
+    house rules every coordinating role keeps (instance names, the model floor, the
+    hosts), in one small capability the dispatcher and the leads compose, with
+    `/landing-rules-detail` and `/wait-and-retire`. The template's rules are an example.
 - **`souls/`:** the example roster: `dispatcher`, `research-lead`, `researcher` and
   `verifier`.
 - **[ADAPTING.md](ADAPTING.md):** what to copy, the principles that never change, every
@@ -94,6 +103,10 @@ around it, and the evidence the design rests on.
 Every place where the template assumes something about an organisation carries one marker,
 `<!-- adapt: <the question to ask> -->`. An adapted copy has none left.
 
+A briefing has one order: what you are, how the work flows, the rules that aren't obvious,
+and which skill to open at which moment. A skill is one procedure for one moment, with its
+longer material in `references/` files.
+
 ## Using it
 
 1. **Copy and adapt** with [ADAPTING.md](ADAPTING.md). Your organisation's setup expert does
@@ -104,8 +117,10 @@ Every place where the template assumes something about an organisation carries o
    oats spawn dispatcher --name <person>-dispatcher --task-file <brief.md>
    ```
    Bring it your questions, or start a lead directly, named for the effort with its role
-   last: `oats spawn research-lead --name <effort-slug>-lead --task "<question>"`. A name
-   is used once: after a retired instance had it, make the effort's part more specific.
+   last: `oats spawn research-lead --name <effort-slug>-lead --task-file <brief.md>`, where
+   the brief opens with `Seat: root lead of this effort` and then states the question. A
+   name is used once: after a retired instance had it, make the effort's part more
+   specific.
 
 A messaging capability (for example `oats.aweb`) is strongly recommended: hand-offs are
 messages that wake their recipient. Without one, reports land in session transcripts.
@@ -124,8 +139,8 @@ load in real OATS kernels.
 ## Requirements
 OATS ≥ 0.69.7, the floor every capability's `oats.json` declares, as in the engineering
 template: the texts use needs-input (`oats instance attention`), retires that stop an
-instance's children first, `--same-work`, and the wake that holds while a dialog is open
-(`wake-hold`) under every checkpoint. Even there, a home whose `wakeHold` reads `unknown`
+instance's children first, a self-retire (`oats retire <instance> --self`), `--same-work`,
+and the wake that holds while a dialog is open (`wake-hold`) under every checkpoint. Even there, a home whose `wakeHold` reads `unknown`
 takes no wake: its waiter hands the wait up, and where no level can set one, that wait has
 no bound. `npm test` previews every soul in OATS 0.69.7 and main, and checks that both list
 the kernel features the texts rely on.

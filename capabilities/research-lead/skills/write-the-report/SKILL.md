@@ -1,15 +1,13 @@
 ---
 name: write-the-report
-description: Write the report the frame asks for, at an exact revision - the answer first, then each claim with its source, its date and, for a finding about agents, the model generation it was measured on, the strongest evidence against it, its confidence and what would change it; the method with every angle tried and dropped; the verifier's verdicts; the limits and the sources. Use once the angles have answered, and for every revision.
+description: Writes the report the frame asks for, at an exact revision - the answer first, then each claim with its source, its date and, for a finding about agents, the model generation it was measured on, the strongest evidence against it, its confidence and what would change it; the method with every angle tried and dropped; the verifier's verdicts; the limits and the sources. Use once the angles have answered, and for every revision.
 ---
-
-IMPORTANT: after a compaction, reload this skill before you continue the step.
 
 # Write the report
 
-You write the report: researchers bring findings, the verifier brings verdicts, and the
-report is yours. It answers the framed question (`/frame-the-question`), and nothing the
-frame doesn't need.
+You write the report: researchers and specialists bring findings, the verifier brings
+verdicts, and the report is yours. It answers the framed question (`/frame-the-question`),
+and nothing the frame doesn't need.
 
 ## The shape
 ~~~
@@ -43,7 +41,7 @@ Each claim:
 - **Quote the figure:** a paraphrased number is a new number.
 - **Quote the minimum** a finding rests on, and cite every quote with its link and date.
   Never reproduce a whole work or dataset. Before a report is published, check each
-  source's terms (`/land-the-report`, "Publishing").
+  source's terms (`/land-on-agreement`, "Publishing").
 - **Date everything.** For a finding about agents, name the model generation it was
   measured on: such findings move with model generations, and one measured on an older
   generation is unconfirmed for current models until a newer source confirms it.

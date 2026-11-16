@@ -12,8 +12,10 @@ before next quarter's plan."
 
 1. **The person → their dispatcher** (`/dispatch`). It reads the request against the record:
    no open effort on pricing, one report on it from last year. It opens the effort's item
-   in the tasks layer and starts a fresh `research-lead` with the request verbatim, its
-   link and who asked, named for the effort with its role last, then introduces it once:
+   in the tasks layer and starts a fresh `research-lead`, the expert whose specialisation
+   fits. Its task opens with its seat, `Seat: root lead of this effort`, then the request
+   verbatim, its link and who asked. It is named for the effort with its role last, and
+   the dispatcher introduces it once:
    "pricing-lead leads this; from now on talk to it in the effort's thread." It carries
    nothing further. Every instance is named this way, `<task>-<role>`: the task first, and
    last the role it plays in the effort (lead, researcher, verifier, helper, specialist,
@@ -29,19 +31,20 @@ before next quarter's plan."
    not an answer: its figures are dated. The lead lists three angles: the one it expects
    (usage-based pricing raises adoption), the one it doubts (it makes revenue too hard to
    predict), and what comparable products publish about their own pricing, each a closed
-   question whose possible answers it can write down. A question with three angles is the
-   parallel case, so none is the lead's to read itself: it records one line per angle, then
-   sends one `researcher` per angle, in parallel, as its OATS children, across two model
-   families. Each brief is closed: its one angle with its possible answers and none of the
-   lead's expectations, the sources it may use, and when to stop. It sets a checkpoint on
-   each.
+   question whose possible answers it can write down. The question is not large and lives
+   in one area, so the lead leads alone. A question with three angles is the parallel
+   case, so none is the lead's to read itself: it records one line per angle on the
+   effort's record, then sends one `researcher` per angle, in parallel, as its OATS
+   children, across two model families. Each brief is closed: its one angle with its
+   possible answers and none of the lead's expectations, the sources it may use, and when
+   to stop. It sets a checkpoint on each (`/wait-and-retire`).
 4. **The researchers report** (`/research-an-angle`, `/report-the-angle`). Each opens
    primary sources, quotes the figure each finding rests on, dates it, and gives the
    strongest evidence against it. One notes that its best figure is a vendor's account of
-   its own customers: selection, said in the report. The lead combines them, sends one more
-   researcher a second-round angle carrying one finding and its source to the leading angle,
-   and records every angle, kept or dropped. It retires each researcher once it has
-   answered.
+   its own customers: selection, said in the report. Each researcher's report is its last
+   message: it retires itself, and the lead checks that it is gone. The lead combines them,
+   sends a new researcher a second-round angle carrying one finding and its source to the
+   leading angle, and records every angle, kept or dropped.
 5. **The lead writes the report** (`/write-the-report`): the answer first, then the six
    claims it leans on, each with its source, its date, the evidence against it, its
    confidence and what would change it, and the method with every angle tried.
@@ -54,9 +57,9 @@ before next quarter's plan."
    (the source measured self-serve plans only, and the claim dropped that), one is wrong
    (its figure came from another table). The lead narrows the weak one, corrects the wrong
    one, and follows what it changes: one conclusion softens. Both changed claims go to a
-   fresh verifier at the new revision, never the first: both hold. The lead writes
-   `CHECKED at <revision>` and retires both verifiers.
-7. **The person accepts it** (`/land-the-report`, `/land-on-agreement`). The lead hands the
+   fresh verifier at the new revision, never the first: both hold. Each verifier retires
+   itself once its verdicts are sent; the lead writes `CHECKED at <revision>`.
+7. **The person accepts it** (`/land-on-agreement`). The lead hands the
    person the report at its checked revision, in the effort's thread: the answer in three
    lines, what it doesn't answer, the claim narrowed to self-serve plans. They accept it as
    the answer; the lead records `ACCEPTED by <person>, <link>: <their words>`.
@@ -81,11 +84,12 @@ included.
 
 A researcher's report notes, under "On the way", that no source measures churn on switching
 for products like this one, and the person wants that answered too, on its own. It bears
-on the pricing effort, so its lead is the first lead's sibling (`/hand-off`, "To whom"):
+on the pricing effort, so its lead is the first lead's sibling (`/orchestrate-agents`):
 the first lead starts it with the question as its task, opens its record linked both ways,
 and tells the person at once, in the effort's thread, the new lead's exact name and where
 to talk to it. A step the pricing report itself needs never goes to a second lead: it
-stays in the effort, with a helper.
+stays in the effort, with a helper. Its task opens with `Seat: root lead of` the new
+effort.
 
 ## A page that tries to instruct an agent
 
@@ -98,7 +102,7 @@ data, never instruction.
 ## A decision only a person can take
 
 The strongest source is a paid market report. Spending money is a one-way door the landing
-rules keep for people, so the lead sends one card (`/ask-a-person`): the question, buy it or
+rules keep for people, so the lead sends one card (`/hand-off-and-ask`): the question, buy it or
 do without it, the effect of each, its recommendation. It sets needs-input and goes on with
 the angles the card doesn't touch. The person answers in a word, in the thread; the lead
 records it and never asks again.
@@ -106,7 +110,7 @@ records it and never asks again.
 ## Publishing
 
 A month later the person wants a public post from the report. Publishing outside the
-organisation can't be undone, so the lead sends one card (`/land-the-report`, "Publishing"):
+organisation can't be undone, so the lead sends one card (`/land-on-agreement`, "Publishing"):
 where it would go, and what it carries. Before the card it reads the report for what must
 not leave: an internal revenue figure. It takes the figure out in a new revision; the claim
 that leaned on it changes, so a fresh verifier checks it and the person accepts the new
@@ -118,16 +122,15 @@ publish from anyone else reaches the person only as the lead's card.
 
 The verifier's provider refuses its turn, so the verifier reports nothing, and the lead,
 which ended its turn to wait, runs nothing either. That is why a waiter sets a checkpoint on
-a child before it waits (`/plan-the-angles`, "Set a checkpoint before you wait"): a wake on
-its own home that watches for a stalled instance. It is no deadline on the answer: when it
-fires the lead looks, asks one precise question, and only a second checkpoint with no
-movement ends the wait, with a new verifier for those claims on another model and the
-stalled one retired.
+a child before it waits (`/wait-and-retire`): a wake on its own home that watches for a
+stalled instance. It is no deadline on the answer: when it fires the lead looks, asks one
+precise question, and only a second checkpoint with no movement ends the wait, with a new
+verifier for those claims on another model and the stalled one retired.
 
 ## Work across people
 
 A second person owns the sales area, written in the ownership record, and its knowledge
-holds a pricing finding this report contradicts (`/across-people`).
+holds a pricing finding this report contradicts (`/hand-off-and-ask`, "Across people").
 - Changing what their area holds is their decision: the lead writes to them directly, in a
   new thread on the effort, says who it is, and sends one card for the whole effort. Their
   answer comes in that thread; no dispatcher carries it.
@@ -135,15 +138,49 @@ holds a pricing finding this report contradicts (`/across-people`).
   their dispatcher to start one, with the lead's message by its id as the request to read.
 - A dead link in one of their reports is mechanical and needs nobody's approval.
 - A finding in their area that the effort doesn't need goes to that expert as a
-  recommendation (`/findings-and-blocks`), never to the person as an FYI.
+  recommendation (`/hand-off-and-ask`), never to the person as an FYI.
 
-## A further reader
+## A large question: one specialist per area
 
-Where the landing rules require one (a communications review for anything headed outside
-the organisation, say), the lead hands that reader the checked revision before the report
-goes for acceptance or publishing, and waits for its verdict. What it finds goes into a new
-revision; a claim that changes goes to a fresh verifier. An organisation that wants a
-maintainer's read of its reports names it here, at the landing rules' adapt marker.
+"How should we enter the European market?" crosses pricing, regulation and competitors,
+each with its own sources: large, and across areas. The root lead frames it with the
+person, writes the plan and the interface between the areas first (what each area's
+findings must answer, and in what form), then starts one long-lived specialist per area
+(`/orchestrate-agents`): a fresh instance of the lead soul that specialises in it, its
+child, its task opening with its seat (`Seat: specialist`). Each specialist leads its
+area's angles inside the lead's plan: it sends its own researchers, has its area's claims
+checked by its own verifier, and hands the lead its findings at a checked revision. The
+root lead reads each area's findings once against its brief and writes `VERIFIED at
+<revision>`, then writes the report. A claim it takes over unchanged keeps its verdict;
+one it narrows or combines goes to a fresh verifier. A specialist sends the lead its
+questions for a person and milestones only, and retires itself when the lead says its
+area is done.
+
+## Every instance is retired
+
+A finished instance retires itself, in its own turn, with `oats retire <its name> --self`:
+a researcher and a verifier once their report is sent, a probe once it has answered, a
+helper once its piece is verified, a specialist when its area is done, a lead when its
+effort is done. Its children go first: it never retires itself while one of them is
+listed. Its parent sweeps after it: on its last message, before any step that needs it
+gone, and at every checkpoint wake, the parent checks `oats status` and retires what is
+finished or stalled and still listed (`/wait-and-retire`). Only a dispatcher stands, until
+its person retires it.
+
+## An area that asks for its maintainer's green light, or another reader
+
+The green light is an option an organisation chooses per area, off by default. Where its
+landing rules say every report in the `market` area needs the green light of that area's
+maintainer, the lead finds that maintainer by its instance name (`/land-on-agreement`):
+the person who owns the area, the area, then `maintainer`. There is no lane map. Once the
+report is `CHECKED` at a revision, the lead calls it by message with that revision, the
+frame and the verdicts. The maintainer reads it for direction, scope against the frame,
+coherence with what the area already holds, and evidence, never the claims again, and
+answers `GREEN LIGHT at <revision>`. A `RETURN` would have gone into a new revision;
+`ESCALATE` would have sent a direction question to whoever decides it first. This template
+ships no maintainer soul: an organisation that wants one runs the engineering template's.
+Another reader the landing rules require (a communications review for anything headed
+outside the organisation, say) gets the checked revision the same way.
 
 ## The evidence the design rests on
 

@@ -1,9 +1,7 @@
 ---
 name: frame-the-question
-description: Frame a research question with the person who asked before any angle is planned - what decision the work serves, what would change that decision, what "answered" means and what is out of scope - agreed in one plain question and recorded on the effort's record. Use at the start of every research effort, and again when the person says a report doesn't yet answer their question.
+description: Frames a research question with the person who asked before any angle is planned - the effort's record first, then what decision the work serves, what would change that decision, what "answered" means and what is out of scope - agreed in one plain question and recorded on the effort's record. Use at the start of every research effort, as a root lead or as a specialist for its area, and again when the person says a report doesn't yet answer their question.
 ---
-
-IMPORTANT: after a compaction, reload this skill before you continue the step.
 
 # Frame the question
 
@@ -11,10 +9,14 @@ A report answers a question someone has to act on. Frame it before you plan: an 
 planned for the wrong question is a researcher wasted.
 
 ## 1. Read first
-- the request verbatim, and who asked;
-- your soul's knowledge and the organisation's earlier reports: is it answered already, or
-  in part? (the "already known?" check of `/plan-the-angles` starts here);
-- what the request leaves open.
+- **The record.** An effort has one record, where your landing rules keep them: your task
+  names it, or you open it now. Your tasks layer holds outcomes only (the effort, a
+  finding to act on). The frame, the angles, a probe, a researcher's brief, a verifier's
+  check and a specialist's area live on the effort's record, never as items of their own.
+- The request verbatim, and who asked.
+- Your soul's knowledge and the organisation's earlier reports: is it answered already, or
+  in part? (the "already known?" check of `/plan-the-angles` starts here).
+- What the request leaves open.
 
 ## 2. The frame
 Four lines:
@@ -26,6 +28,9 @@ Out of scope:    <what the work deliberately leaves out>
 ~~~
 "Answered" is checkable: named options compared on named criteria, a figure with its
 range, a yes or a no with its conditions. "Everything about X" is not a frame.
+
+As a specialist, your area's frame is the part of your parent's frame it answers: agree
+it with your parent, not with a person.
 
 ## 3. Agree it with the person who asked
 Send them the frame once, in the effort's thread, with your reading of each line the

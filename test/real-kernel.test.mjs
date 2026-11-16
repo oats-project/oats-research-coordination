@@ -69,7 +69,7 @@ defaults:
   mkdirSync(memberSrc);
   for (const dir of ["capabilities", "souls"]) cpSync(join(REPO, dir), join(memberSrc, dir), { recursive: true });
   // The copy's release record (ADAPTING.md, section 4): a plain file the kernel must ignore.
-  writeFileSync(join(memberSrc, "capabilities", "TEMPLATE-RELEASE"), "template: oats-project/oats-research-coordination\nrelease: template-v2.1.2\n");
+  writeFileSync(join(memberSrc, "capabilities", "TEMPLATE-RELEASE"), "template: oats-project/oats-research-coordination\nrelease: template-v3.0.0\n");
   writeFileSync(join(memberSrc, "oats-membership.yaml"), `schemaVersion: 2
 workspace: file://${workspaceBare}
 `);
@@ -124,11 +124,13 @@ async function checkKernel(t, label, ref) {
 
   const dispatcher = preview("dispatcher");
   assert.deepEqual(modules(dispatcher), ["oats.dispatcher", "oats.landing-rules"]);
-  assert.deepEqual(skills(dispatcher), ["dispatch"], "the dispatcher leads nothing: no expert or maintainer skills");
+  // oats.landing-rules brings its two skills to every soul that composes it.
+  const RULES = ["landing-rules-detail", "wait-and-retire"];
+  assert.deepEqual(skills(dispatcher), sorted(["dispatch", ...RULES]), "the dispatcher leads nothing: no lead skills");
 
   const lead = preview("research-lead");
   assert.deepEqual(modules(lead), ["oats.landing-rules", "oats.research-lead"]);
-  assert.deepEqual(skills(lead), ["across-people", "ask-a-person", "check-the-claims", "findings-and-blocks", "frame-the-question", "hand-off", "land-on-agreement", "land-the-report", "plan-the-angles", "send-a-helper", "write-the-report"]);
+  assert.deepEqual(skills(lead), sorted(["check-the-claims", "frame-the-question", "hand-off-and-ask", "land-on-agreement", "orchestrate-agents", "plan-the-angles", "write-the-report", ...RULES]));
 
   const researcher = preview("researcher");
   assert.deepEqual(modules(researcher), ["oats.researcher"], "a researcher composes only its own role");

@@ -1,5 +1,135 @@
 # Changelog
 
+## template-v3.0.0 - 2026-11-16
+
+A major release, following engineering's template-v4.0.0: every text is recomposed, and
+the way of working gains seats, a tree sized to the work with one specialist per area for
+a large question, a maintainer's green light as an option, and self-retirement. The
+briefings say less and say it once: the lead's 1,976 words are 1,280, the landing rules'
+1,630 are about 1,300, the dispatcher's 510 are 424; the lead's 11 skills are 7, and the
+landing rules gain the two skills every coordinating soul now has. The whole is about as
+long as before (about 20,700 words to 21,500): the checkpoint and the retirement, once in
+`/plan-the-angles` and `/land-on-agreement`, are now shared skills, and the specialist and
+the hand-over of an effort are new. What the template does (framing the question,
+planning the angles, researching and reporting an angle, disproving the claims, writing
+and landing the report) is recomposed, not thinned. There is no passage to port: a copy
+takes this release up whole (ADAPTING.md, section 6).
+
+**How the texts are composed now**
+- A briefing has one order: what you are, how the work flows, the rules that aren't
+  obvious (each with its reason), and which skill to open at which moment.
+- A skill is one procedure for one moment. Longer material sits in `references/` files
+  one level down, which the skill names.
+- A rule lives in one place. Instance names, the model floor, the hosts and secrets are
+  once, in the landing rules' house rules, for the dispatcher and the lead; the
+  researcher and the verifier, which compose no landing rules, keep the hosts and secrets
+  rule in their own briefings.
+- The "LOAD THE SKILL" banners in capitals, and each skill's reload line, are gone: each
+  briefing's last section says which skill to open when, and to open it again after a
+  compaction. Capitals mark a handful of rules per briefing.
+
+**What changes in how agents work**
+- **One agent is the default.** A child earns its place by one of three reasons, named in
+  its brief: protecting context, parallel work, specialisation. (template-v2.x listed
+  four; testing a theory or an approach is now a use of a probe, under the same three.)
+  The verifier is not chosen this way: every report needs one.
+- **The tree is sized to the work.** One small angle: the lead reads it, and a verifier
+  checks it. Several angles: researchers, one per angle in parallel, with short-lived
+  probes and helpers. Large, or across several areas: one long-lived specialist per area,
+  which leads its area's angles inside the lead's plan, has its area's claims checked by
+  its own verifier, and hands its findings back at a checked revision; it never writes
+  the report. This replaces template-v2.1.0's standing specialist, and its cap and marker
+  are gone.
+- **Seats.** Every lead-soul instance holds exactly one seat, root lead, specialist, or
+  helper or probe, named on a `Seat:` line in its task by whoever launches it. One with no
+  seat named takes itself for a root lead. A researcher, a verifier and a dispatcher are
+  their own seat.
+- **Who leads:** the expert soul whose specialisation fits the effort best (before: whose
+  area it mostly lives in). It hands a whole effort to another expert only on its person's
+  yes; its children hand back and retire first, and the new lead starts what remains.
+- **`VERIFIED at <reference>`** is the note of whoever specified a helper's scoped piece or
+  a specialist's area, written before the report leans on it. `CHECKED at <revision>`
+  stays the lead's note on the verifier's verdicts.
+- **"Green light" means only an area maintainer's verdict** on a report at an exact
+  revision: `GREEN LIGHT`, `RETURN` or `ESCALATE`, on direction, scope, coherence and
+  evidence, never a second check of the claims. It replaces "a further reader" as the way
+  to add a maintainer's read, and it is an option the landing rules choose per area, off
+  by default. This template ships no maintainer soul. Three returns on one report become
+  one card to the person.
+- **What carries to a new revision:** the verdicts as before (a changed or added claim
+  gets a fresh verifier; a revision that changes no claim carries them once the lead has
+  read its delta), and a claim taken unchanged from a specialist's checked findings keeps
+  its verdict. A `VERIFIED` note and a green light are given again at any new revision.
+- **No lane map.** An area's maintainer, where the organisation runs one, is found by its
+  instance name, `<person>-<area>-maintainer`, and a taken name stops a second one.
+- **Every finished instance retires itself,** children first, with `oats retire <name>
+  --self`, and its parent sweeps: it checks that the child is gone on its last message,
+  before any step that needs it gone and at every checkpoint wake. Before, a parent
+  retired its children on their done line.
+- **One researcher, one report; one verifier, one report.** Each retires itself once its
+  report is sent, with no done line. A question a researcher's report leaves open goes to
+  a new researcher, and an incomplete or disputed verdict to a fresh verifier.
+- **The tasks layer holds outcomes only:** an effort, a finding to act on. The frame, the
+  angles, a probe, a check and a specialist's area live on the effort's record, and the
+  angles tried are recorded there (before: in the lead's instance state).
+
+**`oats.research-lead`**: seven skills.
+- new `/orchestrate-agents`: from `/send-a-helper`, with the tree, the specialist and the
+  brief templates (`references/briefs.md`, `references/probes.md`,
+  `references/start-point.md`).
+- new `/hand-off-and-ask`: `/hand-off`, `/ask-a-person`, `/findings-and-blocks` and
+  `/across-people` (`references/across-people.md`), and handing a whole effort over.
+- `/land-on-agreement` takes in `/land-the-report` (`references/publishing.md`) and the
+  maintainer's green light (`references/find-the-maintainer.md`); it loses "Retire what's
+  finished", now in `/wait-and-retire`.
+- `/plan-the-angles` gains sizing the tree; its researcher's brief moves to
+  `references/researcher-brief.md`; "Set a checkpoint before you wait" moves to
+  `/wait-and-retire`.
+- `/frame-the-question` gains the effort's record, and a specialist's frame for its area.
+- `/check-the-claims`: the verifier retires itself on its report; what was missing goes
+  to a fresh verifier.
+- `/write-the-report`: its pointer to publishing now names `/land-on-agreement`.
+
+| Removed skill | Its rules now |
+|---|---|
+| `send-a-helper` | `/orchestrate-agents` and its references |
+| `hand-off`, `ask-a-person`, `findings-and-blocks`, `across-people` | `/hand-off-and-ask` and `references/across-people.md` |
+| `land-the-report` | `/land-on-agreement` and `references/publishing.md` |
+
+**`oats.researcher`** and **`oats.verifier`**: the briefings in the new order; each
+retires itself once its report is sent. `/report-the-angle` ends with that;
+`/disprove-the-claims` section 5 sends a disputed verdict to a fresh verifier.
+
+**`oats.dispatcher`**: engineering's template-v4.0.0 text: a lead's task opens with its
+seat; the expert soul whose specialisation fits; a maintainer is found by its name. Its
+"A PR with no lead" bullet is left out: this template's landing rules have no PRs.
+
+**`oats.landing-rules`**: a briefing in the new order, with the house rules, and two
+skills.
+- new `/landing-rules-detail`: a verdict and `CHECKED`, `VERIFIED`, what carries to a new
+  revision, the green light, the model floor, and, in `references/more-rules.md`, who
+  does the work, before the angles, the records, and after a change to these rules.
+- new `/wait-and-retire`: the checkpoint (`references/checkpoint.md`), what finished means
+  per seat, the done line, retiring yourself, and the parent's sweep.
+
+**Adapt markers**: 16 are 15. A copy's earlier answers go here:
+
+| The marker in template-v2.1.2 | Now |
+|---|---|
+| "Does any report need a reader beyond the verifier and the person who accepts it before it lands?" (the landing rules) | the landing rules, as "Where does the organisation require a maintainer's green light on a report, or another reader beyond the verifier, before it goes for acceptance?" |
+| "How many probes may a lead run in parallel for one decision?" (`send-a-helper`) | `/orchestrate-agents`, `references/probes.md` |
+| "Which specialist souls can a lead call as helpers, ..." (`send-a-helper`) | `/orchestrate-agents`, as "Which expert souls can lead an area as a specialist, or take a helper's task, ..." |
+| "How many standing specialists may a lead keep at once?" (`send-a-helper`) | gone |
+
+The other markers are where they were.
+
+**Docs**
+- `README.md`, `ADAPTING.md` (principles, "How the texts are composed", the green light as
+  an option, beside an engineering copy, taking up this release whole) and
+  `docs/how-the-work-flows.md` (a large question with specialists, an area that asks for
+  its maintainer's green light, every instance is retired) follow the texts.
+
+
 ## template-v2.1.2 - 2026-11-12
 
 A patch release, following engineering's template-v3.1.3: a floor for a child's model, and
