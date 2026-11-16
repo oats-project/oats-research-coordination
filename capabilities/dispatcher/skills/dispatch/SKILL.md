@@ -16,7 +16,7 @@ Before you start anything, read:
   has some.
 
 A request that can't be meant as written (a question a landed report already answers, one
-already being researched) gets one question back: what the record shows, with its link,
+that asks for a decision rather than research) gets one question back: what the record shows, with its link,
 and "Did you mean <your reading>?" Start nothing until they answer. Ask nothing else: what
 the lead can work out is the lead's.
 

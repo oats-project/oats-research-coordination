@@ -29,8 +29,8 @@ reports or published work. Record a search that found nothing, so nobody runs it
   list of claims (`/check-the-claims`), a probe with one closed question, or a helper with
   one scoped piece: a part of the effort that is well defined, needs little from the rest
   and hands back a compact result, and needs capabilities you lack (another soul's
-  skills, sources, environment or tools). It reports once, distilled, and is retired.
-  Send one whenever a reason holds, at any size of effort and any level of the tree.
+  skills, sources, environment or tools). It reports once, distilled, and retires.
+  Send one whenever a reason holds, at any size and level of the tree.
 - **A long-lived specialist:** it leads one area of a large effort, for the whole effort.
 
 A step of your plan in another area is still your effort. Where a read answers it, read
@@ -75,44 +75,39 @@ the expert soul that knows the area.
 <!-- adapt: Which expert souls can lead an area as a specialist, or take a helper's task, and what does each bring (sources, an environment, skills, a domain)? -->
 The generalist `research-lead` takes any area, one fresh instance per area.
 
-An area has its own sources, knowledge or environment, and an interface to the rest of
-the question that can be written down: what its findings must answer, and in what form.
-Parts that share sources or need constant back-and-forth are one area.
+What counts as one area: [references/briefs.md](references/briefs.md), "A specialist".
 - **It leads its area's angles inside your plan,** as a lead leads an effort: it frames
   its part with you, plans its angles, sends its own researchers, probes and helpers, has
   its area's claims checked by its own verifier, and hands you its findings at a checked
   revision. It never writes the report, and never checks a claim it made. It sizes its
-  own tree as you do, with specialists of its own only for distinct, narrower sub-areas,
-  and you keep what your briefing gives the root lead.
-- **Read its area's knowledge yourself,** enough to plan and to write the interfaces. The
-  specialist carries the depth.
-- **Interfaces:** write each one before either side relies on it. From then on the two
+  own tree as you do (specialists of its own only for narrower sub-areas); you keep what
+  your briefing gives the root lead.
+- **Interfaces:** read the area's knowledge yourself, enough to write each interface (the
+  specialist carries the depth), and write each one before either side relies on it. From then on the two
   specialists agree a change directly and record it on the effort's record. What they
   can't settle is yours.
-- **It reports** at its area's milestones only: its angles planned, its findings checked
-  at a revision, the area done. You read its findings once against its brief and write
-  `VERIFIED at <revision>` (`/landing-rules-detail`) before the report leans on them.
+- **Its findings:** it reports at the milestones its brief names (`references/briefs.md`,
+  "A specialist"); you read its findings once against its brief and write `VERIFIED at
+  <revision>` (`/landing-rules-detail`) before the report leans on them.
 
 ## 5. Probes and helpers
 A probe tests one thing the plan rests on, by experiment or a reading in a fresh context:
 that a source or a dataset exists and covers the population the frame names, that a method
 measures what the decision needs. A plan that rests on an untested assumption, or on one
 approach chosen by argument, isn't ready.
-[references/probes.md](references/probes.md) has the method: closed questions, exploration
-with bounds, competing approaches in parallel, why a probe never checks its own claim, and
-choosing its model.
+[references/probes.md](references/probes.md) has the method, and how to choose a probe's
+model.
 
-A helper with a scoped piece hands it back at an exact reference, with how it was
-produced. You read it once against its brief and write `VERIFIED at <reference>`. What it
-hands back is a source, not a verdict: keep it on the effort's record at its exact
-reference, and a claim the report takes from it goes to the verifier, never to the helper
-that made it.
+A helper hands its scoped piece back at an exact reference, with how it was produced; you
+read it once against its brief and write `VERIFIED at <reference>`. It is a source, not a
+verdict: keep it on the effort's record, and a claim the report takes from it goes to the
+verifier, never to the helper.
 
 An OATS child is visible to your person, has its own messaging and knowledge, and is
 retired on record. Every researcher's angle and every verifier's check is one. Use a
 native subagent of your harness only for a small lookup that needs no soul's knowledge or
 environment, where your person asks for one, or inside your harness's multi-agent
-workflow mode. Either kind runs at or above the model floor your landing rules set.
+workflow mode.
 
 ## 6. Brief it, and take back its result
 Write the brief from [references/briefs.md](references/briefs.md). For an expert

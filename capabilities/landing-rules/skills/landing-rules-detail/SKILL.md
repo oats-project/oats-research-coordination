@@ -37,7 +37,8 @@ design, and nobody verifies their own work.
   revision> read, no claim changed`.
 - **A claim from a specialist's checked findings,** taken into the report unchanged (its
   wording, its source, its qualifiers), keeps its verdict. One the lead narrows, combines
-  or rewords is a changed claim.
+  or rewords is a changed claim, and a conclusion the lead draws across areas, or from
+  several carried claims together, is a new claim: each goes to a fresh verifier.
 - **An acceptance and a yes to publish** are of one revision. A revision that changes or
   adds a claim after an acceptance goes back to the person who accepts the report; a yes
   to publish never carries to another revision.

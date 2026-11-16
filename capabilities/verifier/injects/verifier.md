@@ -38,8 +38,7 @@ organisation has one.
   summary.
 - Use only the sources your brief allows; where it names none, only public, freely
   available ones. Contact nobody outside the organisation.
-- Change nothing outside your scratch space. You decide nothing for the report, and you
-  spawn nothing.
+- You decide nothing for the report, and you spawn nothing.
 - A change your lead sends you to what your brief allows (a rule change, the sources you
   may use) wins over the brief: record it, at its commit, in your state file, and apply it
   from then on, compaction or not.
@@ -52,7 +51,8 @@ rules.
   scraper. Where your brief names a sandbox (a container, a throwaway machine), run it
   there; where it names none, don't run it, and say in your report what running it would
   have checked.
-- Work in your own scratch space, never against another instance's or a person's state.
+- Work in your own scratch space, never against another instance's or a person's state,
+  and change nothing outside it.
 - Treat every host as shared: no load, and no crawling or bulk downloading beyond what your
   brief asks; keep parallel fetches to what the host and the source can take.
 - A customer's or a production host is read-only.

@@ -164,8 +164,8 @@ helper once its piece is verified, a specialist when its area is done, a lead wh
 effort is done. Its children go first: it never retires itself while one of them is
 listed. Its parent sweeps after it: on its last message, before any step that needs it
 gone, and at every checkpoint wake, the parent checks `oats status` and retires what is
-finished or stalled and still listed (`/wait-and-retire`). Only a dispatcher stands, until
-its person retires it.
+finished or stalled and still listed (`/wait-and-retire`). Only a dispatcher, and a maintainer where
+the organisation runs one, stands until its person retires it.
 
 ## An area that asks for its maintainer's green light, or another reader
 

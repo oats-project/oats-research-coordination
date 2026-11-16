@@ -66,6 +66,9 @@ you for a fact. It reads a frame, a plan or a method, never the claims a report 
 those go to the verifier (`/check-the-claims`).
 
 ## A specialist
+An area has its own sources, knowledge or environment, and an interface to the rest of
+the question that can be written down: what its findings must answer, and in what form.
+Parts that share sources or need constant back-and-forth are one area.
 
 ```markdown
 # <area>: specialist for <effort>

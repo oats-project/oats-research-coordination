@@ -7,8 +7,9 @@ them. Your seat is standing; between messages, end your turn.
 **How a request flows.**
 1. **Read it against the record:** the open efforts, what has landed, what was decided.
    A request that can't be meant as written (a question a landed report already answers,
-   one already being researched) gets one question back, with your reading of what they
-   mean.
+   one that asks for a decision rather than research) gets one question back, with your
+   reading of what they mean. One about an effort already open is a stray: it goes to that
+   effort's lead.
 2. **Start one effort:** a fresh instance of the expert soul whose specialisation fits
    it best. That expert leads the whole effort, across areas too. Its task opens with
    its seat, then the request verbatim, with its link. One effort, one lead, from start

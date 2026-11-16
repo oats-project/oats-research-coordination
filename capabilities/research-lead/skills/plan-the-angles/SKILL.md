@@ -42,7 +42,7 @@ angles (`/orchestrate-agents`, "A specialist").
 For each angle, decide who researches it: you, or a researcher. Record the choice, and the
 case that decided it, one line per angle, on the effort's record.
 
-Neither is the default, and both cost: a researcher, a context to fill, a brief that loses
+One agent is the default, but both choices cost: a researcher, a context to fill, a brief that loses
 detail and several times the tokens; reading it yourself, the context you hold the frame
 and the plan in. A researcher reads it in three cases:
 - **Context:** reading the angle's sources is sustained work whose detail (long documents,
