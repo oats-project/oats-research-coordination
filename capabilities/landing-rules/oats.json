@@ -1,11 +1,14 @@
 {
   "capability": "oats.landing-rules",
-  "version": "2.1.2",
+  "version": "3.0.0",
   "compatibility": {
     "oats": ">=0.69.7"
   },
-  "description": "This organisation's landing rules and ownership record for research, in one place: who asks and who accepts a report, what must hold at a report's revision before it goes for acceptance (the verifier's verdicts and the lead's note), any further reader the organisation requires, who does the work (the lead frames, plans, decides who researches each angle, writes and lands; researchers and the verifier are its helpers, and it never checks its own claims), the one-way doors kept for people, who decides publishing, where findings worth keeping go, who owns which areas, and where the effort records and reports are kept. Composed by every coordinating soul (the dispatcher and the research leads). The template's rules are an example to adapt. Copied from the research template, template-v2.1.2.",
+  "description": "This organisation's landing rules and ownership record for research, in one place for every coordinating role (the dispatcher and the research leads): who asks and who accepts a report, what lands it at one revision (the verifier's verdicts acted on, the lead's CHECKED note, a maintainer's green light or another reader where an area asks for one, the acceptance), the sources researchers and verifiers may use, the one-way doors kept for people, who decides publishing, where findings worth keeping go, who owns which areas, where effort records and reports are kept, and the house rules (instance names, the model floor for children, the hosts and secrets). Two skills hold what the briefing leaves out: landing-rules-detail (the definitions: a verdict and CHECKED, VERIFIED for a helper's piece or a specialist's area, what carries to a new revision, the green light, the model floor, who does the work, records) and wait-and-retire (the checkpoint that bounds a wait on an instance, and retiring a finished one). The template's rules are defaults: an organisation answers the adapt markers with its own. Copied from the research template, template-v3.0.0.",
   "requires": [],
   "inject": "injects/landing-rules.md",
-  "skills": []
+  "skills": [
+    "skills/landing-rules-detail",
+    "skills/wait-and-retire"
+  ]
 }

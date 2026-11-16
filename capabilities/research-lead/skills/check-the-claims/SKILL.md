@@ -1,9 +1,7 @@
 ---
 name: check-the-claims
-description: Have the claims a report leans on checked by the verifier - a fresh instance briefed to disprove, on a different model from every researcher and from you where the organisation has one, given the claims and their cited sources at the report's revision and not your reasoning - then act on its verdict per claim (holds, weak or wrong), each with the Checked line that says what it checked, and send a fresh verifier for any claim a revision changes or adds. Use before a report goes for acceptance, and for every revision that changes or adds a claim it leans on.
+description: Has the claims a report leans on checked by the verifier - a fresh instance briefed to disprove, on a different model from every researcher and from you where the organisation has one, given the claims and their cited sources at the report's revision and not your reasoning - then act on its verdict per claim (holds, weak or wrong), each with the Checked line that says what it checked, and send a fresh verifier for any claim a revision changes or adds. Use before a report goes for acceptance, and for every revision that changes or adds a claim it leans on.
 ---
-
-IMPORTANT: after a compaction, reload this skill before you continue the step.
 
 # Check the claims
 
@@ -20,8 +18,8 @@ doesn't rest on needs no verifier, but the report says which claims were not che
 
 ## 2. The verifier's model
 Different from every researcher's and from yours, where the organisation has one
-(`/plan-the-angles`, "Pick the models"). If you can't establish a difference, use the
-effective one and say so in the report's limits.
+(`/plan-the-angles`, "Pick the models"), at or above the floor. If you can't establish a
+difference, use your own model, and say that diversity was lost in the report's limits.
 
 ## 3. Send it
 The verifier is your child, the brief its task, named for what it checks with its role
@@ -31,7 +29,8 @@ claims names its round, `pricing-claims-r2-verifier`):
 oats spawn verifier --parent "$OATS_INSTANCE" --same-work --name <check-slug>-verifier --task-file <claims.md>
 ```
 Add `--harness <h> --model <m>` (or a launch configuration) only where step 2 needs another
-model than the effective one. The brief holds exactly:
+model than the effective one. A verifier is its own seat, and every report needs one: its
+brief has no `Seat:` line and names no reason. The brief holds exactly:
 1. the question as framed, in two or three sentences;
 2. the claims, numbered, each with its cited source, at the report's revision; every
    passage you quote from a source goes in a block labelled
@@ -42,19 +41,21 @@ model than the effective one. The brief holds exactly:
 4. what to return: a verdict per claim (holds, weak or wrong) with its evidence and its
    Checked line (the attacks it ran, and what each opened), and each claim it couldn't
    check, with why;
-5. who to report to (you), and how (your messaging layer, if any).
+5. who to report to (you), and how (your messaging layer, if any); that it reports once
+   and then retires itself.
 
 Leave out the researchers' reports, your reasoning, what you think is risky, how confident
 you are and which claims you doubt: it reads the sources itself. It may ask you for a
-fact. A long list may go to more than one verifier, each with claims of its own.
+fact before it reports. A long list may go to more than one verifier, each with claims of
+its own.
 
-Before you wait, set its checkpoint (`/plan-the-angles`, "Set a checkpoint before you
-wait").
+Before you wait, set its checkpoint (`/wait-and-retire`).
 
 ## 4. Act on each verdict
 First, check the report is complete: a verdict for every claim in the brief, each with its
-Checked line. A verdict without one, or a claim missing, is not a check yet: ask that
-verifier to complete it, or send the claim to a fresh verifier. Then, for each claim:
+Checked line. A verdict without one, or a claim missing, is not a check yet: the verifier
+is gone once it has reported, so send that claim to a fresh verifier. Then, for each
+claim:
 - **Holds:** the claim stays, its check noted beside it.
 - **Weak:** narrow the claim to what its evidence supports (restore the dropped qualifier,
   population, version or condition), or show it as weak, with why, and lower its
@@ -68,10 +69,12 @@ verifier to complete it, or send the claim to a fresh verifier. Then, for each c
   verdict stands, or show the claim in the report as disputed, with both sides' evidence.
 
 Every correction is a new revision, and a claim it changes or adds goes to a fresh verifier
-(`/land-on-agreement`, "A new revision"), never back to the one that checked the old
-wording. Once every claim the report leans on has its verdict at one revision, write
-`CHECKED at <revision>` (`/land-on-agreement`, "Checked").
+(`/landing-rules-detail`, "What carries to a new revision"), never back to the one that
+checked the old wording. Once every claim the report leans on has its verdict at one
+revision, write `CHECKED at <revision>: <the verdicts, one line each>` on the effort's
+record (`/landing-rules-detail`, "A verdict, and CHECKED").
 
-## 5. Retire it
-Once its verdict is in and your questions about it are answered, retire it
-(`/land-on-agreement`, "Retire what's finished").
+## 5. It retires itself
+A verifier's verdicts are its last message: one verifier, one report. Record them beside
+the revision they checked, and check that it is gone (`/wait-and-retire`, "The parent's
+sweep").
