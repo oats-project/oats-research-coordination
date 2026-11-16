@@ -63,9 +63,11 @@ takes this release up whole (ADAPTING.md, section 6).
   together, is a new claim and goes to a fresh verifier. A `VERIFIED` note and a green
   light are given again at any new revision.
 - **No lane map.** An area's maintainer, where the organisation runs one, is found by its
-  instance name, `<person>-<area>-maintainer`, or after a retired one by its numbered
-  successor (`<person>-<area>-2-maintainer`): the one not retired is the maintainer, and
-  a live one stops a second.
+  instance name, `<person>-<area>-maintainer`, or after a retired one with a count
+  before the role (`<person>-<area>-2-maintainer`). A lead or a dispatcher looks for every
+  name of that family; with more than one running or stopped, it asks the person; before
+  it starts one, it finds the first name no instance has had, with `oats instance events
+  <name>`, since the kernel doesn't refuse a retired instance's name.
 - **Every finished instance retires itself,** children first, with `oats retire <name>
   --self`, and its parent sweeps: it checks that the child is gone on its last message,
   before any step that needs it gone and at every checkpoint wake. Before, a parent

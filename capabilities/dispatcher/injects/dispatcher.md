@@ -31,8 +31,7 @@ them. Your seat is standing; between messages, end your turn.
   or the maintainer of one of your person's areas where the organisation runs one. Start
   it with a task that names the role, the area and who asked, with their message by its
   id as the request to read, and tell them its name. Never a second maintainer for an
-  area while one exists, even a stopped one: look for it by its name, and its numbered
-  successors, first.
+  area while one exists, even a stopped one: look for every name of its family first.
 - When your person asks what they have open, answer from the record: one line per open
   effort (what it is, who leads it, where it stands, its link).
 
