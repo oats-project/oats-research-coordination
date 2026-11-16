@@ -56,7 +56,8 @@ Nobody else is certain to: an instance left behind keeps its window, its identit
 wakes. In this order:
 1. **Your children are gone:** `oats status --json` lists no instance with you as its
    parent. Retire any that is (below). NEVER retire yourself over a child: that stops it
-   and keeps its home, which is how instances are left behind.
+   and keeps its home, which is how instances are left behind. If a child won't stop, the
+   retire refuses with `E_CHILDREN_RUNNING`.
 2. **Nothing uncommitted or unpushed,** and your extra worktrees removed. A retire keeps
    a tree that holds work; it doesn't deliver it.
 3. **Your final knowledge checkpoint,** where you have a duty to propose.

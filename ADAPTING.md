@@ -202,8 +202,12 @@ landing rules:
   named sandbox) beside engineering's. Into its two skills, add this template's
   definitions as sections of their own: in `landing-rules-detail`, "A verdict, and
   CHECKED", "VERIFIED, for a helper's piece and a specialist's area", "What carries to a
-  new revision" and the green light on a report; in `wait-and-retire`, the researcher's
-  and the verifier's rows. The rules are the organisation's, one text for all its ways of
+  new revision" and the green light on a report. In `wait-and-retire`, merge this
+  template's finishing rules with engineering's, keeping each way of working's: a
+  researcher and a verifier are finished once their report is sent and send no done
+  line; a research helper once its sender has written `VERIFIED` on its piece, with no
+  PR; a research lead once its report is accepted or its effort dropped; and the parent's
+  sweep may discard a researcher's, a verifier's or a probe's scratch work. The rules are the organisation's, one text for all its ways of
   working.
 - **The lead's skills:** `oats.research-lead` carries `orchestrate-agents`,
   `hand-off-and-ask` and `land-on-agreement` under the same names as the engineering

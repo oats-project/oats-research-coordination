@@ -34,6 +34,8 @@ Where your briefing says they are kept:
 The tasks layer holds outcomes only: an effort, a finding to act on.
 
 ## After a change to these rules
+Where the workspace has oats.framework's `oats.coordination-setup`, its set-landing-rules
+skill writes a change, on the yes of the person who owns the area.
 Whoever wrote the change messages each standing instance (the dispatchers) and the lead of
 each open effort, with the change at its commit. Each lead tells its running children of a
 change that bears on them: its specialists and helpers, and its researchers and verifiers

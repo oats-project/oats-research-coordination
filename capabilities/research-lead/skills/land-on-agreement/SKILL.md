@@ -55,9 +55,9 @@ new green light: the maintainer reads the delta and gives it again.
 question and the frame or plan at its exact revision.
 
 ## 3. To the person who accepts it
-When every agreement holds at one revision, send one message in the effort's thread with
-the person who accepts the report. It is a hand-off, not a card: what they decide is
-whether it answers their question.
+When every agreement but the acceptance holds at one revision, send one message in the
+effort's thread with the person who accepts the report. It is a hand-off, not a card:
+what they decide is whether it answers their question.
 - first line: "The answer to <the framed question>, for your acceptance";
 - second: which claims are disputed or not checked, and which are weak;
 - the report's link at its checked revision;
